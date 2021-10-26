@@ -46,6 +46,16 @@ amuseProvider.libraryPlaylists()
 ### Retrieve User Library Songs.
 
 ```swift
+amuseProvider.libraryAlbums()
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve User Library Songs.
+
+```swift
 amuseProvider.librarySongs()
     .sink { _ in
     } receiveValue: { response in

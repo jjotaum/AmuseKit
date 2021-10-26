@@ -1,0 +1,159 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "artistName": "Bruce Springsteen",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music7/v4/d7/d4/4c/d7d44c9a-fb71-4ba4-1bf6-3beeb179f03f/dj.fogkvpds.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "Born in the U.S.A.",
+                "playParams": {
+                    "id": "l.rE2SnBs",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.rE2SnBs",
+            "id": "l.rE2SnBs",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Bob Dylan",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music/08/dc/91/mzi.cscwtxfp.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "Highway 61 Revisited",
+                "playParams": {
+                    "id": "l.7znhNGs",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.7znhNGs",
+            "id": "l.7znhNGs",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Sam Smith",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music4/v4/e7/55/fa/e755fa2b-01c4-3c6d-1788-fa15ba1eabe8/UMG_cvrart_00602537780211_01_RGB72_1500x1500_13UAEIM58958.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "In the Lonely Hour (Deluxe Version)",
+                "playParams": {
+                    "id": "l.JWErW12",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.JWErW12",
+            "id": "l.JWErW12",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Michael de Jong",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music/v4/3c/63/27/3c6327f3-8c69-98af-415c-aef50fa6a3b9/MDJ_2014_V02.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "Something For the Pain",
+                "playParams": {
+                    "id": "l.s8iCzXa",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.s8iCzXa",
+            "id": "l.s8iCzXa",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Lana Del Rey",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music2/v4/54/d5/76/54d5765e-8bc2-af71-483e-5a5fb5597c61/UMG_cvrart_00602537865659_01_RGB72_1500x1500_14UMGIM20562.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "Ultraviolence (Deluxe)",
+                "playParams": {
+                    "id": "l.424stuk",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.424stuk",
+            "id": "l.424stuk",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Ukraine National Symphony Orchestra",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Features/f5/33/e1/dj.aomjdzqh.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "The Very Best of Tchaikovsky",
+                "playParams": {
+                    "id": "l.Zll9glr",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.Zll9glr",
+            "id": "l.Zll9glr",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Katy Perry",
+                "artwork": {
+                    "height": 1200,
+                    "url": "https://example.mzstatic.com/image/thumb/Music127/v4/85/cc/1c/85cc1c0a-cef2-d81b-6394-d556c61a0bef/UMG_cvrart_00602557675559_01_RGB72_1800x1800_17UMGIM99424.jpeg/{w}x{h}bb.jpeg",
+                    "width": 1200
+                },
+                "name": "Witness",
+                "playParams": {
+                    "id": "l.XlUb5Ja",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.XlUb5Ja",
+            "id": "l.XlUb5Ja",
+            "type": "library-albums"
+        },
+        {
+            "attributes": {
+                "artistName": "Ed Sheeran",
+                "name": "x (Deluxe Edition)",
+                "playParams": {
+                    "id": "l.k7Rwaou",
+                    "isLibrary": true,
+                    "kind": "album"
+                },
+                "trackCount": 0
+            },
+            "href": "/v1/me/library/albums/l.k7Rwaou",
+            "id": "l.k7Rwaou",
+            "type": "library-albums"
+        }
+    ]
+}

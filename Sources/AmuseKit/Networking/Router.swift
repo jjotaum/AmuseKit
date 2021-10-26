@@ -17,6 +17,7 @@ protocol URLRequestConvertible {
 
 enum Router {
     case libraryPlaylists
+    case libraryAlbums
     case librarySongs
     case recommendations
     case search(countryCode: String)
@@ -28,6 +29,8 @@ extension Router: URLConvertible, URLRequestConvertible {
         switch self {
         case .libraryPlaylists:
             return "/v1/me/library/playlists"
+        case .libraryAlbums:
+            return "/v1/me/library/albums"
         case .librarySongs:
             return "/v1/me/library/songs"
         case .recommendations:

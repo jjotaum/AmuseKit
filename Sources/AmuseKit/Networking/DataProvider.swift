@@ -11,6 +11,7 @@ import class KeychainAccess.Keychain
 
 public extension AmuseKit {
     typealias LibraryPlaylistResponse = ResponseRoot<LibraryPlaylist, EmptyCodable>
+    typealias LibraryAlbumResponse = ResponseRoot<LibraryAlbum, EmptyCodable>
     typealias LibraryTrackResponse = ResponseRoot<LibraryTrack, EmptyCodable>
     
     class DataProvider {
@@ -60,6 +61,17 @@ public extension AmuseKit {
             return try service.publisher(with: request)
         }
 
+        public func libraryAlbums() throws -> AnyPublisher<AmuseKit.LibraryAlbumResponse, Error> {
+            guard let developerToken = storage.developerToken else {
+                throw AmuseKit.AmuseError.missingDevToken
+            }
+
+            var request = try Router.libraryAlbums.asURLRequest([])
+            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
+            request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
+            return try service.publisher(with: request)
+        }
+        
         public func librarySongs() throws -> AnyPublisher<AmuseKit.LibraryTrackResponse, Error> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKit.AmuseError.missingDevToken

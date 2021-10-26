@@ -23,6 +23,8 @@ public extension AmuseKit {
     }
 
     struct LibraryArtwork: Codable {
+        public let height: Int
+        public let width: Int
         public let url: String
     }
 }
