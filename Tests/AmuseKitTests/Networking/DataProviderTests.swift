@@ -18,6 +18,10 @@ final class DataProviderTests: XCTestCase {
     override func setUp() {
         mock.setDeveloperToken("A1D2E3V4T5O6K7E8N9")
     }
+    
+    override func tearDown() {
+        tasks = []
+    }
 
     func testCatalogSearch() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -66,6 +70,21 @@ final class DataProviderTests: XCTestCase {
 
         wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
     }
+    
+    func testLibraryAlbums() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        try mock.libraryAlbums()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
+    }
 
     func testLibraryTracks() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -85,6 +104,7 @@ final class DataProviderTests: XCTestCase {
     static var allTests = [
         ("testCatalogSearch", testCatalogSearch),
         ("testLibrarySearch", testLibrarySearch),
+        ("testLibraryAlbums", testLibraryAlbums),
         ("testLibraryPlaylists", testLibraryPlaylists),
         ("testLibraryTracks", testLibraryTracks)
     ]

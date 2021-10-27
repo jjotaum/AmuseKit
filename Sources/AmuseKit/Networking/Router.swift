@@ -15,21 +15,20 @@ protocol URLRequestConvertible {
     func asURLRequest(_ queryItems: [URLQueryItem]) throws -> URLRequest
 }
 
-enum Router {
-    case libraryPlaylists
-    case librarySongs
-    case recommendations
-    case search(countryCode: String)
-    case librarySearch
+extension AmuseKit {
+    enum Router {
+        case library(LibraryResourceType)
+        case recommendations
+        case search(countryCode: String)
+        case librarySearch
+    }
 }
 
-extension Router: URLConvertible, URLRequestConvertible {
+extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     private var path: String {
         switch self {
-        case .libraryPlaylists:
-            return "/v1/me/library/playlists"
-        case .librarySongs:
-            return "/v1/me/library/songs"
+        case .library(let type):
+            return "/v1/me/\(type.rawValue.replacingOccurrences(of: "-", with: "/"))"
         case .recommendations:
             return "/v1/me/recommendations"
         case .search(let countryCode):

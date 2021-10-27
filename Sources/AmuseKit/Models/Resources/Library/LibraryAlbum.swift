@@ -23,7 +23,7 @@ public extension AmuseKit {
 public extension AmuseKit.LibraryAlbum {
     struct Attributes: Codable {
         public let artistName: String
-        public let artwork: AmuseKit.LibraryArtwork
+        public let artwork: AmuseKit.LibraryArtwork?
         public let contentRating: String?
         public let name: String
         public let playParams: AmuseKit.PlayParameters?

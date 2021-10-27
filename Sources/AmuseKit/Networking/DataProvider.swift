@@ -11,6 +11,7 @@ import class KeychainAccess.Keychain
 
 public extension AmuseKit {
     typealias LibraryPlaylistResponse = ResponseRoot<LibraryPlaylist, EmptyCodable>
+    typealias LibraryAlbumResponse = ResponseRoot<LibraryAlbum, EmptyCodable>
     typealias LibraryTrackResponse = ResponseRoot<LibraryTrack, EmptyCodable>
     
     class DataProvider {
@@ -50,22 +51,23 @@ public extension AmuseKit {
         // MARK: - Library Methods
 
         public func libraryPlaylists() throws -> AnyPublisher<AmuseKit.LibraryPlaylistResponse, Error> {
-            guard let developerToken = storage.developerToken else {
-                throw AmuseKit.AmuseError.missingDevToken
-            }
-
-            var request = try Router.libraryPlaylists.asURLRequest([])
-            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
-            request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
-            return try service.publisher(with: request)
+            try libraryRequest(.library(.playlists))
         }
 
+        public func libraryAlbums() throws -> AnyPublisher<AmuseKit.LibraryAlbumResponse, Error> {
+            try libraryRequest(.library(.albums))
+        }
+        
         public func librarySongs() throws -> AnyPublisher<AmuseKit.LibraryTrackResponse, Error> {
+            try libraryRequest(.library(.songs))
+        }
+        
+        private func libraryRequest<T: Codable>(_ router: Router) throws -> AnyPublisher<T, Error> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKit.AmuseError.missingDevToken
             }
 
-            var request = try Router.librarySongs.asURLRequest([])
+            var request = try router.asURLRequest([])
             request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
             request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
             return try service.publisher(with: request)
@@ -74,21 +76,14 @@ public extension AmuseKit {
         // MARK: - Search Methods
 
         public func librarySearch(_ resourceTypes: LibrarySearchTypes = .all, limit: Int = 25, searchTerm: String) throws -> AnyPublisher<AmuseKit.SearchResponse, Error> {
-            guard let developerToken = storage.developerToken else {
-                throw AmuseKit.AmuseError.missingDevToken
-            }
-
-            let queryItems = [
-                URLQueryItem(name: "term", value: searchTerm),
-                URLQueryItem(name: "limit", value: String(limit)),
-                URLQueryItem(name: "types", value: resourceTypes.map({ $0.rawValue }).joined(separator: ","))
-            ]
-            var request = try Router.librarySearch.asURLRequest(queryItems)
-            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
-            return try service.publisher(with: request)
+            try searchRequest(.librarySearch, rawTypes: resourceTypes.map({ $0.rawValue }), limit: limit, searchTerm: searchTerm)
         }
 
         public func catalogSearch(_ resourceTypes: CatalogSearchTypes = .all, limit: Int = 25, searchTerm: String) throws -> AnyPublisher<AmuseKit.SearchResponse, Error> {
+            try searchRequest(.search(countryCode: userCountryCode), rawTypes: resourceTypes.map({ $0.rawValue }), limit: limit, searchTerm: searchTerm)
+        }
+        
+        private func searchRequest<T: Codable>(_ router: Router, rawTypes: [String], limit: Int, searchTerm: String) throws -> AnyPublisher<T, Error> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKit.AmuseError.missingDevToken
             }
@@ -96,9 +91,9 @@ public extension AmuseKit {
             let queryItems = [
                 URLQueryItem(name: "term", value: searchTerm),
                 URLQueryItem(name: "limit", value: String(limit)),
-                URLQueryItem(name: "types", value: resourceTypes.map({ $0.rawValue }).joined(separator: ","))
+                URLQueryItem(name: "types", value: rawTypes.joined(separator: ","))
             ]
-            var request = try Router.search(countryCode: userCountryCode).asURLRequest(queryItems)
+            var request = try router.asURLRequest(queryItems)
             request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
             return try service.publisher(with: request)
         }
