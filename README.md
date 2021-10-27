@@ -43,7 +43,7 @@ amuseProvider.libraryPlaylists()
     }
 ```
 
-### Retrieve User Library Songs.
+### Retrieve User Library Albums.
 
 ```swift
 amuseProvider.libraryAlbums()
