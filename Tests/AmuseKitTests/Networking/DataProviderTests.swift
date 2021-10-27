@@ -18,6 +18,10 @@ final class DataProviderTests: XCTestCase {
     override func setUp() {
         mock.setDeveloperToken("A1D2E3V4T5O6K7E8N9")
     }
+    
+    override func tearDown() {
+        tasks = []
+    }
 
     func testCatalogSearch() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
