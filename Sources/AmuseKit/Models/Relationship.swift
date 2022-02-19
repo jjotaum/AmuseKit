@@ -28,5 +28,5 @@ public extension AmuseKit {
     typealias LibraryAlbumsRelationship = Relationship<LibraryAlbum>
     typealias LibraryArtistsRelationship = Relationship<LibraryArtist>
     typealias LibraryPlaylistsRelationship = Relationship<LibraryPlaylist>
-    typealias LibraryTracksRelationship = Relationship<LibraryTrack>
+    typealias LibraryTracksRelationship = Relationship<LibrarySong>
 }

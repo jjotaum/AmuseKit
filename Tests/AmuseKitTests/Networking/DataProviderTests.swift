@@ -5,9 +5,9 @@
 //  Created by Jota Uribe on 18/06/21.
 //
 
+@testable import AmuseKit
 import Combine
 import XCTest
-@testable import AmuseKit
 
 final class DataProviderTests: XCTestCase {
 
@@ -101,10 +101,25 @@ final class DataProviderTests: XCTestCase {
         wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
     }
 
-    func testLibraryTracks() throws {
+    func testLibrarySongs() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
         try mock.librarySongs()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
+    }
+    
+    func testLibraryMusicVideos() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        try mock.libraryMusicVideos()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in
                 completionExpectation.fulfill()
@@ -119,10 +134,11 @@ final class DataProviderTests: XCTestCase {
     static var allTests = [
         ("testCatalogSearch", testCatalogSearch),
         ("testLibrarySearch", testLibrarySearch),
+        ("testLibraryPlaylists", testLibraryPlaylists),
         ("testLibraryAlbums", testLibraryAlbums),
         ("testLibraryArtists", testLibraryArtists),
-        ("testLibraryPlaylists", testLibraryPlaylists),
-        ("testLibraryTracks", testLibraryTracks)
+        ("testLibrarySongs", testLibrarySongs),
+        ("testLibraryMusicVideos", testLibraryMusicVideos)
     ]
 }
 

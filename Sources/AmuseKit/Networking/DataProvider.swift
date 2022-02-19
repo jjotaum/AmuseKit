@@ -13,7 +13,8 @@ public extension AmuseKit {
     typealias LibraryPlaylistResponse = ResponseRoot<LibraryPlaylist, EmptyCodable>
     typealias LibraryAlbumResponse = ResponseRoot<LibraryAlbum, EmptyCodable>
     typealias LibraryArtistResponse = ResponseRoot<LibraryArtist, EmptyCodable>
-    typealias LibraryTrackResponse = ResponseRoot<LibraryTrack, EmptyCodable>
+    typealias LibrarySongResponse = ResponseRoot<LibrarySong, EmptyCodable>
+    typealias LibraryMusicVideoResponse = ResponseRoot<LibraryMusicVideo, EmptyCodable>
     
     class DataProvider {
         public typealias CatalogSearchTypes = Set<CatalogResourceType>
@@ -63,8 +64,12 @@ public extension AmuseKit {
             try libraryRequest(.library(.artists))
         }
         
-        public func librarySongs() throws -> AnyPublisher<AmuseKit.LibraryTrackResponse, Error> {
+        public func librarySongs() throws -> AnyPublisher<AmuseKit.LibrarySongResponse, Error> {
             try libraryRequest(.library(.songs))
+        }
+        
+        public func libraryMusicVideos() throws -> AnyPublisher<AmuseKit.LibraryMusicVideoResponse, Error> {
+            try libraryRequest(.library(.musicVideos))
         }
         
         private func libraryRequest<T: Codable>(_ router: Router) throws -> AnyPublisher<T, Error> {
