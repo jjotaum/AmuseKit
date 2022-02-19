@@ -1,0 +1,208 @@
+{
+    "next": "/v1/me/library/artists?offset=25",
+    "data": [
+        {
+            "id": "r.SBnYSwr",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.SBnYSwr",
+            "attributes": {
+                "name": "A Boogie wit da Hoodie"
+            }
+        },
+        {
+            "id": "r.9aJ0ok9",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.9aJ0ok9",
+            "attributes": {
+                "name": "A R I Z O N A"
+            }
+        },
+        {
+            "id": "r.QIBwOV2",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.QIBwOV2",
+            "attributes": {
+                "name": "a-ha"
+            }
+        },
+        {
+            "id": "r.fB5ffez",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.fB5ffez",
+            "attributes": {
+                "name": "A-Trak"
+            }
+        },
+        {
+            "id": "r.ciD0dIb",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.ciD0dIb",
+            "attributes": {
+                "name": "A$AP Ferg"
+            }
+        },
+        {
+            "id": "r.mbeVRU1",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.mbeVRU1",
+            "attributes": {
+                "name": "A$AP Rocky"
+            }
+        },
+        {
+            "id": "r.6mQx5dk",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.6mQx5dk",
+            "attributes": {
+                "name": "ABC Silhouettes on the Clarity (Jesús Canteli MashUp)"
+            }
+        },
+        {
+            "id": "r.ZyM0Nqo",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.ZyM0Nqo",
+            "attributes": {
+                "name": "Above & Beyond"
+            }
+        },
+        {
+            "id": "r.6QxQQab",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.6QxQQab",
+            "attributes": {
+                "name": "Above & Beyond Feat Richard Bedford"
+            }
+        },
+        {
+            "id": "r.5LOyj32",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.5LOyj32",
+            "attributes": {
+                "name": "Above & Beyond feat. Alex Vargas"
+            }
+        },
+        {
+            "id": "r.yheuZWo",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.yheuZWo",
+            "attributes": {
+                "name": "AC/DC"
+            }
+        },
+        {
+            "id": "r.9sWGJZg",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.9sWGJZg",
+            "attributes": {
+                "name": "Adam Foster"
+            }
+        },
+        {
+            "id": "r.BweG57p",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.BweG57p",
+            "attributes": {
+                "name": "Adam Lambert"
+            }
+        },
+        {
+            "id": "r.7aKjIQy",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.7aKjIQy",
+            "attributes": {
+                "name": "Adam Levine & Javier Colon"
+            }
+        },
+        {
+            "id": "r.cRJMM7y",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.cRJMM7y",
+            "attributes": {
+                "name": "Adam Levine & Tony Lucca"
+            }
+        },
+        {
+            "id": "r.w4YnQlx",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.w4YnQlx",
+            "attributes": {
+                "name": "Adam Levine, Blake Sheldon, Christina Aguilera, Cee-Lo Green"
+            }
+        },
+        {
+            "id": "r.d6Vq5H",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.d6Vq5H",
+            "attributes": {
+                "name": "Adele"
+            }
+        },
+        {
+            "id": "r.Nah1qLo",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.Nah1qLo",
+            "attributes": {
+                "name": "Adele vs. Daft Punk"
+            }
+        },
+        {
+            "id": "r.wLCFoWf",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.wLCFoWf",
+            "attributes": {
+                "name": "Adley Stump"
+            }
+        },
+        {
+            "id": "r.Pg5BXjB",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.Pg5BXjB",
+            "attributes": {
+                "name": "Adriana Louise"
+            }
+        },
+        {
+            "id": "r.UvVMUCA",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.UvVMUCA",
+            "attributes": {
+                "name": "Adventure Club "
+            }
+        },
+        {
+            "id": "r.cYrZham",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.cYrZham",
+            "attributes": {
+                "name": "Ady Suleiman"
+            }
+        },
+        {
+            "id": "r.cSy5nPq",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.cSy5nPq",
+            "attributes": {
+                "name": "Aer"
+            }
+        },
+        {
+            "id": "r.qZ5xEDw",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.qZ5xEDw",
+            "attributes": {
+                "name": "Aerokind & Clément Bcx"
+            }
+        },
+        {
+            "id": "r.prZkAkk",
+            "type": "library-artists",
+            "href": "/v1/me/library/artists/r.prZkAkk",
+            "attributes": {
+                "name": "Aerosmith"
+            }
+        }
+    ],
+    "meta": {
+        "total": 2355
+    }
+}

@@ -12,6 +12,7 @@ import class KeychainAccess.Keychain
 public extension AmuseKit {
     typealias LibraryPlaylistResponse = ResponseRoot<LibraryPlaylist, EmptyCodable>
     typealias LibraryAlbumResponse = ResponseRoot<LibraryAlbum, EmptyCodable>
+    typealias LibraryArtistResponse = ResponseRoot<LibraryArtist, EmptyCodable>
     typealias LibraryTrackResponse = ResponseRoot<LibraryTrack, EmptyCodable>
     
     class DataProvider {
@@ -56,6 +57,10 @@ public extension AmuseKit {
 
         public func libraryAlbums() throws -> AnyPublisher<AmuseKit.LibraryAlbumResponse, Error> {
             try libraryRequest(.library(.albums))
+        }
+        
+        public func libraryArtists() throws -> AnyPublisher<AmuseKit.LibraryArtistResponse, Error> {
+            try libraryRequest(.library(.artists))
         }
         
         public func librarySongs() throws -> AnyPublisher<AmuseKit.LibraryTrackResponse, Error> {

@@ -85,6 +85,21 @@ final class DataProviderTests: XCTestCase {
 
         wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
     }
+    
+    func testLibraryArtists() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        try mock.libraryArtists()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: 2.0)
+    }
 
     func testLibraryTracks() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -105,6 +120,7 @@ final class DataProviderTests: XCTestCase {
         ("testCatalogSearch", testCatalogSearch),
         ("testLibrarySearch", testLibrarySearch),
         ("testLibraryAlbums", testLibraryAlbums),
+        ("testLibraryArtists", testLibraryArtists),
         ("testLibraryPlaylists", testLibraryPlaylists),
         ("testLibraryTracks", testLibraryTracks)
     ]
