@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents a music video.
-    // https://developer.apple.com/documentation/applemusicapi/musicvideo
+    
+    /// A resource object that represents a music video.
+    /// https://developer.apple.com/documentation/applemusicapi/musicvideos
+    /// Latest revision Feb 21 2022.
 
     struct MusicVideo: Resource {
         public let attributes: Attributes?
@@ -21,8 +23,10 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.MusicVideo {
-    // The attributes for a music video object.
-    // https://developer.apple.com/documentation/applemusicapi/musicvideo/attributes
+    
+    /// The attributes for a music video resource.
+    /// https://developer.apple.com/documentation/applemusicapi/musicvideos/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let albumName: String?
@@ -32,20 +36,23 @@ public extension AmuseKit.MusicVideo {
         public let durationInMillis: Int?
         public let editorialNotes: AmuseKit.EditorialNotes?
         public let genreNames: [String]
-        public let isrc: String
+        public let has4K: Bool
+        public let hasHDR: Bool
+        public let isrc: String?
         public let name: String
         public let playParams: AmuseKit.PlayParameters?
         public let previews: [AmuseKit.Preview]
-        public let releaseDate: String
+        public let releaseDate: String?
         public let trackNumber: Int?
         public let url: URL
         public let videoSubType: String?
-        public let hasHDR: Bool
-        public let has4K: Bool
+        public let workId: String?
+        public let workName: String?
+        public let artistUrl: String?
     }
 
-    // The relationships for a music video object.
-    // https://developer.apple.com/documentation/applemusicapi/musicvideo/relationships
+    /// The relationships for a music video object.
+    /// https://developer.apple.com/documentation/applemusicapi/musicvideo/relationships
 
     struct Relationships: Codable {
         public let albums: AmuseKit.AlbumsRelationship?

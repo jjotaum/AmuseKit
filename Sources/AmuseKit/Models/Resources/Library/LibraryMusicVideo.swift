@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents a library music video.
-    // https://developer.apple.com/documentation/applemusicapi/musicvideos
+    
+    /// A resource object that represents a library music video.
+    /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos
+    /// Latest revision Feb 21 2022.
 
     struct LibraryMusicVideo: Resource {
         public let attributes: Attributes?
@@ -21,13 +23,15 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.LibraryMusicVideo {
-    // The attributes for a library music video object.
-    // https://developer.apple.com/documentation/applemusicapi/musicvideos/attributes
+    
+    /// The attributes for the library music videos resource type.
+    /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos/attributes
+    /// Latest revision Feb 21 2022. 
 
     struct Attributes: Codable {
         public let albumName: String?
         public let artistName: String
-        public let artwork: AmuseKit.LibraryArtwork?
+        public let artwork: AmuseKit.Artwork?
         public let contentRating: String?
         public let durationInMillis: Int
         public let genreNames: [String]
@@ -36,6 +40,9 @@ public extension AmuseKit.LibraryMusicVideo {
         public let releaseDate: String?
         public var trackNumber: Int?
     }
+    
+    /// The relationships from library music videos to other resources.
+    /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos/relationships
 
     struct Relationships: Codable {
         public let albums: AmuseKit.LibraryAlbumsRelationship

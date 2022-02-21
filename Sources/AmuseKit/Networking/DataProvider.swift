@@ -85,7 +85,7 @@ public extension AmuseKit {
         
         // MARK: - Search Methods
 
-        public func librarySearch(_ resourceTypes: LibrarySearchTypes = .all, limit: Int = 25, searchTerm: String) throws -> AnyPublisher<AmuseKit.SearchResponse, Error> {
+        public func librarySearch(_ resourceTypes: LibrarySearchTypes = .all, limit: Int = 25, searchTerm: String) throws -> AnyPublisher<AmuseKit.LibrarySearchResponse, Error> {
             try searchRequest(.librarySearch, rawTypes: resourceTypes.map({ $0.rawValue }), limit: limit, searchTerm: searchTerm)
         }
 

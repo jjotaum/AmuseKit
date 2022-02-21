@@ -1,0 +1,724 @@
+{
+    "next": "/v1/me/library/songs?offset=25",
+    "data": [
+        {
+            "id": "i.QvzkWdqTVx2VZ3",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.QvzkWdqTVx2VZ3",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/8a/de/36/mzi.hmuqubxi.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "La Laque",
+                "discNumber": 1,
+                "genreNames": [
+                    "Alternative"
+                ],
+                "durationInMillis": 244737,
+                "releaseDate": "2007-09-25",
+                "name": "À part",
+                "hasLyrics": false,
+                "albumName": "La Laque - EP",
+                "playParams": {
+                    "id": "i.QvzkWdqTVx2VZ3",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "265639514",
+                    "purchasedId": "265639514"
+                },
+                "trackNumber": 2
+            }
+        },
+        {
+            "id": "i.O1RG2vxTVRAVOl",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.O1RG2vxTVRAVOl",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/a6/c2/c2/a6c2c2e5-1789-e30d-e294-c13435b02203/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=294c531d9041507c67376877e1f3bd822cedc99a200905fd007dfc8825a5adba"
+                },
+                "artistName": "Ed Sheeran",
+                "discNumber": 1,
+                "genreNames": [
+                    "Singer/Songwriter"
+                ],
+                "durationInMillis": 258588,
+                "name": "The A Team",
+                "hasLyrics": true,
+                "albumName": "+ (Deluxe Version)",
+                "playParams": {
+                    "id": "i.O1RG2vxTVRAVOl",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "448213995"
+                },
+                "trackNumber": 1
+            }
+        },
+        {
+            "id": "i.Qvzgkr7FVx2VZ3",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.Qvzgkr7FVx2VZ3",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/3d/3b/a0/3d3ba049-ee73-8bec-2a48-6ed7c05abf67/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=d2529d1436956d1e19aae9c1abc8e3f2f6c7c24deac280552652dbee4e2aebd6"
+                },
+                "artistName": "Vampire Weekend",
+                "discNumber": 1,
+                "genreNames": [
+                    "Alternative"
+                ],
+                "durationInMillis": 137760,
+                "name": "A-Punk",
+                "hasLyrics": true,
+                "albumName": "Vampire Weekend",
+                "playParams": {
+                    "id": "i.Qvzgkr7FVx2VZ3",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "270425151"
+                },
+                "trackNumber": 3
+            }
+        },
+        {
+            "id": "i.ZOM0J6au4lY4pL",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.ZOM0J6au4lY4pL",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/6f/9e/f7/6f9ef769-9c91-2893-6de9-337404f6cca2/06UMGIM10440.rgb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Styx",
+                "discNumber": 2,
+                "genreNames": [
+                    "Rock"
+                ],
+                "durationInMillis": 67106,
+                "name": "A.D. 1928",
+                "hasLyrics": false,
+                "albumName": "Come Sail Away: The Styx Anthology [Disc 2]",
+                "playParams": {
+                    "id": "i.ZOM0J6au4lY4pL",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "1452803739"
+                },
+                "trackNumber": 9
+            }
+        },
+        {
+            "id": "i.qQdGbWmSAVxAL2",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.qQdGbWmSAVxAL2",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/69/4a/d0/694ad0e7-3d37-9783-efcd-c49f58790b5f/06UMGIM05267.rgb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Jackson 5",
+                "discNumber": 1,
+                "genreNames": [
+                    "Pop"
+                ],
+                "durationInMillis": 177133,
+                "name": "ABC",
+                "hasLyrics": false,
+                "albumName": "ABC",
+                "playParams": {
+                    "id": "i.qQdGbWmSAVxAL2",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 3
+            }
+        },
+        {
+            "id": "i.ZOM0RZrT4lY4pL",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.ZOM0RZrT4lY4pL",
+            "attributes": {
+                "artistName": "The Jackson 5",
+                "discNumber": 0,
+                "genreNames": [
+                    ""
+                ],
+                "durationInMillis": 254693,
+                "name": "ABC (N2N & Andie Roy Remix)",
+                "hasLyrics": false,
+                "albumName": "",
+                "playParams": {
+                    "id": "i.ZOM0RZrT4lY4pL",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 0
+            }
+        },
+        {
+            "id": "i.O1RpRG9cVRAVOl",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.O1RpRG9cVRAVOl",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9b/92/b4/9b92b4e8-f542-8625-c7df-9f128e41211c/20UMGIM06063.rgb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "MARINA",
+                "discNumber": 1,
+                "genreNames": [
+                    "Pop"
+                ],
+                "durationInMillis": 214107,
+                "releaseDate": "2020-02-07",
+                "name": "About Love (From the Netflix Film 'To All the Boys: P.S. I Still Love You')",
+                "hasLyrics": true,
+                "albumName": "About Love (From the Netflix Film 'To All the Boys: P.S. I Still Love You') - Single",
+                "playParams": {
+                    "id": "i.O1RpRG9cVRAVOl",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "1497830707"
+                },
+                "trackNumber": 1
+            }
+        },
+        {
+            "id": "i.qQd8Kg4CAVxAL2",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.qQd8Kg4CAVxAL2",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/09/ac/e0/09ace0f6-7478-00ca-6766-aba13546f435/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=3e280b3ee91e4a38f9e579acf637fdbcce2a2d726e1530f87ea6462990e1951d"
+                },
+                "artistName": "Martin Solveig & Dragonette",
+                "discNumber": 0,
+                "genreNames": [
+                    "Hip Hop/R&B/Dance Remix"
+                ],
+                "durationInMillis": 198661,
+                "name": "About My Business (Hello Remix) Extended Dirty",
+                "hasLyrics": false,
+                "albumName": "www.GoodMusicAllDay.com",
+                "playParams": {
+                    "id": "i.qQd8Kg4CAVxAL2",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 0
+            }
+        },
+        {
+            "id": "i.qQd89GqiAVxAL2",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.qQd89GqiAVxAL2",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/02/a8/6f/mzi.gktvagvp.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "The Fray",
+                "discNumber": 1,
+                "genreNames": [
+                    "Rock"
+                ],
+                "durationInMillis": 229333,
+                "name": "Absolute",
+                "hasLyrics": true,
+                "albumName": "The Fray",
+                "playParams": {
+                    "id": "i.qQd89GqiAVxAL2",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "301537184"
+                },
+                "trackNumber": 2
+            }
+        },
+        {
+            "id": "i.PkdJO9at2og2p5",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.PkdJO9at2og2p5",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/9f/ec/a1/9feca1e7-0361-c19e-4ae0-250e229e4825/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=e16c4d692e7859b4df1cf79922cc695dc9b054b71a4dce1c249b26c469a406e8"
+                },
+                "artistName": "Caligula",
+                "discNumber": 1,
+                "genreNames": [
+                    "Dubstep"
+                ],
+                "durationInMillis": 268800,
+                "name": "Absolute Power (Original Mix)",
+                "hasLyrics": false,
+                "albumName": "Gottadancedirty.com™",
+                "playParams": {
+                    "id": "i.PkdJO9at2og2p5",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 1
+            }
+        },
+        {
+            "id": "i.gelJ9dPCL41Lxo",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.gelJ9dPCL41Lxo",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/6c/9c/d1/mzi.glawpdlb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Nine Days",
+                "discNumber": 1,
+                "genreNames": [
+                    "Rock"
+                ],
+                "durationInMillis": 189333,
+                "releaseDate": "2000-05-16",
+                "name": "Absolutely (Story of a Girl)",
+                "hasLyrics": true,
+                "albumName": "The Madding Crowd",
+                "playParams": {
+                    "id": "i.gelJ9dPCL41Lxo",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "186326631",
+                    "purchasedId": "186326631"
+                },
+                "trackNumber": 2
+            }
+        },
+        {
+            "id": "i.V7Bal1LHZ8DZKe",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.V7Bal1LHZ8DZKe",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/ef/95/15/ef951571-2b6f-ccf8-91ab-2556b6571409/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=99b58c5eb993b601d366edb45ad71c68ff79b6c204c2e7c61ef9f1672e57d98b"
+                },
+                "artistName": "Jason Mraz",
+                "discNumber": 1,
+                "genreNames": [
+                    "Pop"
+                ],
+                "durationInMillis": 339133,
+                "name": "Absolutely Zero",
+                "hasLyrics": true,
+                "albumName": "Waiting For My Rocket To Come",
+                "playParams": {
+                    "id": "i.V7Bal1LHZ8DZKe",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "30645558"
+                },
+                "trackNumber": 8
+            }
+        },
+        {
+            "id": "i.PkdJM0AS2og2p5",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.PkdJM0AS2og2p5",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Features/16/2b/2a/dj.jbqfnfph.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Counting Crows",
+                "discNumber": 1,
+                "genreNames": [
+                    "Soundtrack"
+                ],
+                "durationInMillis": 188893,
+                "name": "Accidentally In Love",
+                "hasLyrics": true,
+                "albumName": "Shrek 2",
+                "playParams": {
+                    "id": "i.PkdJM0AS2og2p5",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "1440894560"
+                },
+                "trackNumber": 1
+            }
+        },
+        {
+            "id": "i.AWPVzGkSL7bLma",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.AWPVzGkSL7bLma",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/61/03/de/6103de66-d9da-9b01-d8ce-e25410b0c791/06UMGIM16104.rgb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Counting Crows",
+                "discNumber": 1,
+                "genreNames": [
+                    "Pop"
+                ],
+                "durationInMillis": 189253,
+                "releaseDate": "2004-05-11",
+                "name": "Accidentally In Love",
+                "hasLyrics": true,
+                "albumName": "Films About Ghosts: The Best Of...",
+                "playParams": {
+                    "id": "i.AWPVzGkSL7bLma",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "1444195172"
+                },
+                "trackNumber": 17
+            }
+        },
+        {
+            "id": "i.qQd8Px0SAVxAL2",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.qQd8Px0SAVxAL2",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music62/v4/7e/17/e3/7e17e33f-2efa-2a36-e916-7f808576cf6b/mzm.fyigqcbs.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Led Zeppelin",
+                "discNumber": 2,
+                "genreNames": [
+                    "Rock"
+                ],
+                "durationInMillis": 623146,
+                "name": "Achilles Last Stand",
+                "hasLyrics": false,
+                "albumName": "Mothership",
+                "playParams": {
+                    "id": "i.qQd8Px0SAVxAL2",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 9
+            }
+        },
+        {
+            "id": "i.LVk4kQ8UlVrlzB",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.LVk4kQ8UlVrlzB",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/0c/e5/5b/0ce55b2c-f011-b6bf-3e0e-177575b15110/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=a0f5a3517e419a5a46164433c115192ba1fc38295302bca2b9b2d57aec2598f0"
+                },
+                "artistName": "Chance The Rapper",
+                "discNumber": 1,
+                "genreNames": [
+                    "Acid Rap"
+                ],
+                "durationInMillis": 216372,
+                "name": "Acid Rain",
+                "hasLyrics": false,
+                "albumName": "Acid Rap",
+                "playParams": {
+                    "id": "i.LVk4kQ8UlVrlzB",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 11
+            }
+        },
+        {
+            "id": "i.LVk48BGUlVrlzB",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.LVk48BGUlVrlzB",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/93/2e/80/932e806c-6414-714c-b079-32c6ec86facc/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=61327081a3f7390f59b3c4a2a6f90a8318977c78b8ac77668b45e2240154bdb5"
+                },
+                "artistName": "RAC",
+                "discNumber": 1,
+                "genreNames": [
+                    "Avant-Garde"
+                ],
+                "durationInMillis": 195056,
+                "name": "Across Your Knee (Robbers On High Street Mix)",
+                "hasLyrics": false,
+                "albumName": "Stereogum Presents... RAC Vol. 1",
+                "playParams": {
+                    "id": "i.LVk48BGUlVrlzB",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 6
+            }
+        },
+        {
+            "id": "i.AWPVZN5CL7bLma",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.AWPVZN5CL7bLma",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/6c/a0/676ca02d-1e97-7473-98a8-910ad278c878/5060072304760.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Nero",
+                "discNumber": 0,
+                "genreNames": [
+                    "Dubstep"
+                ],
+                "durationInMillis": 339513,
+                "name": "Act Like You Know (Dubstep Mix)-Nicenoiz.pl",
+                "hasLyrics": true,
+                "albumName": "http://nicenoiz.pl/",
+                "playParams": {
+                    "id": "i.AWPVZN5CL7bLma",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "899588199"
+                },
+                "trackNumber": 0
+            }
+        },
+        {
+            "id": "i.gelJ2V0CL41Lxo",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.gelJ2V0CL41Lxo",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/83/56/b8/8356b8ca-c123-a93d-da43-0a69bd30e9bc/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=83d991b4a853573692a6021da12c83c9aa922abcef0656420de1ac3ee118a969"
+                },
+                "artistName": "The Heydaze",
+                "discNumber": 1,
+                "genreNames": [
+                    ""
+                ],
+                "durationInMillis": 231418,
+                "name": "Adderall (Gazzo & Sweekuh Remix)",
+                "hasLyrics": false,
+                "albumName": "",
+                "playParams": {
+                    "id": "i.gelJ2V0CL41Lxo",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 0
+            }
+        },
+        {
+            "id": "i.V7BaQGRSZ8DZKe",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.V7BaQGRSZ8DZKe",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/8e/35/e1/8e35e145-42bd-7857-8dd6-a93f253dc399/13UACIM75383.rgb.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Saving Abel",
+                "discNumber": 1,
+                "genreNames": [
+                    "Rock"
+                ],
+                "durationInMillis": 223973,
+                "name": "Addicted",
+                "hasLyrics": false,
+                "albumName": "Saving Abel",
+                "playParams": {
+                    "id": "i.V7BaQGRSZ8DZKe",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 2
+            }
+        },
+        {
+            "id": "i.V7BaMaRuZ8DZKe",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.V7BaMaRuZ8DZKe",
+            "attributes": {
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/7e/c5/e37ec5d7-725b-695c-333c-ee0deb5adcc6/dj.mveioodu.jpg/{w}x{h}bb.jpeg"
+                },
+                "artistName": "Kelly Clarkson",
+                "discNumber": 1,
+                "genreNames": [
+                    "Pop"
+                ],
+                "durationInMillis": 237093,
+                "name": "Addicted",
+                "hasLyrics": true,
+                "albumName": "Breakaway",
+                "playParams": {
+                    "id": "i.V7BaMaRuZ8DZKe",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "275765407"
+                },
+                "trackNumber": 6
+            }
+        },
+        {
+            "id": "i.Qvzg6W1TVx2VZ3",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.Qvzg6W1TVx2VZ3",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/cd/5c/89/cd5c89ea-2ff9-6475-4e8d-875b2d56d655/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=4b580b56ad8b9306bb65c11393eb5a1e391bee17a2fbc289a8cde21a0701fd75"
+                },
+                "artistName": "Curtis Grimes",
+                "discNumber": 1,
+                "genreNames": [
+                    "Country"
+                ],
+                "durationInMillis": 193706,
+                "name": "Addicted to Love (The Voice Performance)",
+                "hasLyrics": true,
+                "albumName": "Addicted to Love (The Voice Performance) - Single",
+                "playParams": {
+                    "id": "i.Qvzg6W1TVx2VZ3",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "1445307478"
+                },
+                "trackNumber": 1
+            }
+        },
+        {
+            "id": "i.1YBmYlAhq0vqZP",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.1YBmYlAhq0vqZP",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/63/99/d6/6399d62d-fb9e-0d97-c769-33a00b0db9db/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=a3743cb0571fcf7cbfe464c01fdd5f74192d7a7e5b4730b68a3c45668e1c542d"
+                },
+                "artistName": "Avicii",
+                "discNumber": 1,
+                "genreNames": [
+                    "House"
+                ],
+                "durationInMillis": 148427,
+                "name": "Addicted To You",
+                "hasLyrics": false,
+                "albumName": "True",
+                "playParams": {
+                    "id": "i.1YBmYlAhq0vqZP",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 4
+            }
+        },
+        {
+            "id": "i.PkdJpOXU2og2p5",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.PkdJpOXU2og2p5",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/9d/9e/d5/9d9ed5cb-b210-890b-5c88-65caf131a7f0/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=1a35ebe7ba2983d62fd5c773dc6cb0addabb5b03326088696a32cd270e549d76"
+                },
+                "artistName": "Super Mash Bros.",
+                "discNumber": 1,
+                "genreNames": [
+                    "Still Awesome"
+                ],
+                "durationInMillis": 234004,
+                "name": "Adler Girl Pt. II (I Can Change!)",
+                "hasLyrics": false,
+                "albumName": "All About The Scrilions",
+                "playParams": {
+                    "id": "i.PkdJpOXU2og2p5",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": false
+                },
+                "trackNumber": 6
+            }
+        },
+        {
+            "id": "i.PkdJXKZH2og2p5",
+            "type": "library-songs",
+            "href": "/v1/me/library/songs/i.PkdJXKZH2og2p5",
+            "attributes": {
+                "artwork": {
+                    "width": null,
+                    "height": null,
+                    "url": "https://store-033.blobstore.apple.com/sq-mq-us-033-000002/7c/c5/aa/7cc5aa13-b2b7-72a0-0fa1-82edfbafd138/image?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210930T133731Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=MKIAU0HKO2RBEAT0UMZS%2F20210930%2Fstore-033%2Fs3%2Faws4_request&X-Amz-Signature=a3f9f2e5036a1578d7c8c1b49a2b678185b3f7a46dc8e36ecdc957216f361ff8"
+                },
+                "artistName": "Miguel",
+                "discNumber": 1,
+                "genreNames": [
+                    "R&B/Soul"
+                ],
+                "durationInMillis": 193146,
+                "name": "Adorn",
+                "hasLyrics": true,
+                "albumName": "Kaleidoscope Dream",
+                "playParams": {
+                    "id": "i.PkdJXKZH2og2p5",
+                    "kind": "song",
+                    "isLibrary": true,
+                    "reporting": true,
+                    "catalogId": "561709114"
+                },
+                "trackNumber": 1
+            }
+        }
+    ],
+    "meta": {
+        "total": 6933
+    }
+}
+

@@ -1,0 +1,326 @@
+{
+    "data": [
+        {
+            "id": "l.3pbm8Mu",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.3pbm8Mu",
+            "attributes": {
+                "playParams": {
+                    "id": "l.3pbm8Mu",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "(What's the Story) Morning Glory? [Remastered]",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/3a/ed/91/3aed9186-a837-b54b-2a67-ab886fc2a542/886444642767.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 12,
+                "dateAdded": "2021-01-14T21:51:45Z",
+                "genreNames": [
+                    "Alternative"
+                ],
+                "releaseDate": "1995-10-02"
+            }
+        },
+        {
+            "id": "l.mUNBcX",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.mUNBcX",
+            "attributes": {
+                "playParams": {
+                    "id": "l.mUNBcX",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Be Here Now",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/ef/d6/2c/mzi.cokrlcna.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 12,
+                "dateAdded": "2021-01-14T21:52:11Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "1997-07-07"
+            }
+        },
+        {
+            "id": "l.2k0HUiq",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.2k0HUiq",
+            "attributes": {
+                "playParams": {
+                    "id": "l.2k0HUiq",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Bury the Hatchet",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/b5/28/09/b5280939-6aa7-9054-b270-2f340bb1d849/00731452461124.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 12,
+                "dateAdded": "2021-01-12T02:29:41Z",
+                "genreNames": [
+                    "Pop"
+                ],
+                "releaseDate": "1999-04-19"
+            }
+        },
+        {
+            "id": "l.9QfJXGj",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.9QfJXGj",
+            "attributes": {
+                "playParams": {
+                    "id": "l.9QfJXGj",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Definitely Maybe",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/44/48/a5/mzi.krnvljff.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 11,
+                "dateAdded": "2021-01-14T21:50:28Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "1994-08-29"
+            }
+        },
+        {
+            "id": "l.yWA1kra",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.yWA1kra",
+            "attributes": {
+                "playParams": {
+                    "id": "l.yWA1kra",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Don't Believe the Truth",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/5a/a9/df/mzi.luqkcisj.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 11,
+                "dateAdded": "2021-01-14T21:53:34Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "2005-05-30"
+            }
+        },
+        {
+            "id": "l.NDGNbo1",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.NDGNbo1",
+            "attributes": {
+                "playParams": {
+                    "id": "l.NDGNbo1",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Everybody Else Is Doing It, So Why Can't We?",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/ce/3c/68/ce3c684e-b147-d580-b2ea-8655a854ebce/06UMGIM00853.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 8,
+                "dateAdded": "2021-01-11T22:30:44Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "1993-03-01"
+            }
+        },
+        {
+            "id": "l.uPerpV",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.uPerpV",
+            "attributes": {
+                "playParams": {
+                    "id": "l.uPerpV",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Heathen Chemistry",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Music4/v4/65/b1/57/65b157da-edb5-32f6-99ea-d8de7dcbd461/886444456593.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 12,
+                "dateAdded": "2021-01-14T22:17:23Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "2002-04-15"
+            }
+        },
+        {
+            "id": "l.ei4clDo",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.ei4clDo",
+            "attributes": {
+                "playParams": {
+                    "id": "l.ei4clDo",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "MTV Unplugged",
+                "artistName": "The Cranberries",
+                "trackCount": 9,
+                "dateAdded": "2021-12-14T00:07:05Z",
+                "genreNames": [
+                    "Pop"
+                ]
+            }
+        },
+        {
+            "id": "l.YqHg0Ee",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.YqHg0Ee",
+            "attributes": {
+                "playParams": {
+                    "id": "l.YqHg0Ee",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "No Need To Argue (Deluxe)",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/66/e0/22/66e022a7-610b-ea79-51b3-412b6701254b/20UMGIM35538.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 12,
+                "dateAdded": "2021-01-11T22:29:26Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "1994-01-01"
+            }
+        },
+        {
+            "id": "l.jDOVYJk",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.jDOVYJk",
+            "attributes": {
+                "playParams": {
+                    "id": "l.jDOVYJk",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "No Need to Argue (The Complete Sessions 1994-1995)",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/c1/ee/4f/c1ee4f16-ef38-ec8d-e878-af09e8a8c412/06UMGIM11279.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 5,
+                "dateAdded": "2021-01-11T22:31:05Z",
+                "genreNames": [
+                    "Alternative"
+                ],
+                "releaseDate": "1994-10-01"
+            }
+        },
+        {
+            "id": "l.uvVu8ba",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.uvVu8ba",
+            "attributes": {
+                "playParams": {
+                    "id": "l.uvVu8ba",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Standing On the Shoulder of Giants",
+                "artistName": "Oasis",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/b2/8e/9a/b28e9a5a-4a96-9a5d-6ea1-18f57f0b67f8/mzi.mbntskia.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 10,
+                "dateAdded": "2021-01-14T21:52:30Z",
+                "genreNames": [
+                    "Rock"
+                ],
+                "releaseDate": "2000-02-23"
+            }
+        },
+        {
+            "id": "l.EVIyVV",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.EVIyVV",
+            "attributes": {
+                "playParams": {
+                    "id": "l.EVIyVV",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "To the Faithful Departed",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/23/0b/da/230bda6a-cc8b-c939-ea20-0bc8d2861c42/00602537801831.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 13,
+                "dateAdded": "2021-01-12T02:27:43Z",
+                "genreNames": [
+                    "Pop"
+                ],
+                "releaseDate": "1996-04-30"
+            }
+        },
+        {
+            "id": "l.fBuj3to",
+            "type": "library-albums",
+            "href": "/v1/me/library/albums/l.fBuj3to",
+            "attributes": {
+                "playParams": {
+                    "id": "l.fBuj3to",
+                    "kind": "album",
+                    "isLibrary": true
+                },
+                "name": "Wake Up and Smell the Coffee",
+                "artistName": "The Cranberries",
+                "artwork": {
+                    "width": 1200,
+                    "height": 1200,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/38/47/fd3847f2-ca3b-1823-31e9-f1c24c2edad6/00008811270728.rgb.jpg/{w}x{h}bb.jpg"
+                },
+                "trackCount": 15,
+                "dateAdded": "2021-01-12T02:49:23Z",
+                "genreNames": [
+                    "Pop"
+                ],
+                "releaseDate": "2001-10-22"
+            }
+        }
+    ],
+    "meta": {
+        "total": 13
+    }
+}

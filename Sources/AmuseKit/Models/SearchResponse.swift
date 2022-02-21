@@ -31,7 +31,7 @@ public extension AmuseKit {
         public let curators: AmuseKit.ResponseRoot<Curator, EmptyCodable>?
         public let musicVideos: AmuseKit.ResponseRoot<MusicVideo, EmptyCodable>?
         public let playlists: AmuseKit.ResponseRoot<Playlist, EmptyCodable>?
-        public let songs: AmuseKit.ResponseRoot<Track, EmptyCodable>?
+        public let songs: AmuseKit.ResponseRoot<Song, EmptyCodable>?
         public let stations: AmuseKit.ResponseRoot<Station, EmptyCodable>?
     }
 }

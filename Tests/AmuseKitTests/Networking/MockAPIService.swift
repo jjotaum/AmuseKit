@@ -15,11 +15,12 @@ enum MockAPIServiceError: Error {
 }
 
 struct MockAPIService: APIService  {
+    
+    var resourceName: String = ""
 
     func publisher<T>(with request: URLRequest) throws -> AnyPublisher<T, Error> where T : Decodable, T : Encodable {
-        let endpoint = request.url?.lastPathComponent ?? ""
-        guard let filePath = Bundle.module.path(forResource: endpoint, ofType: "json") else {
-            throw MockAPIServiceError.invalidFilePath(endpoint: endpoint)
+        guard let filePath = Bundle.module.path(forResource: resourceName, ofType: "json") else {
+            throw MockAPIServiceError.invalidFilePath(endpoint: resourceName)
         }
 
         let publisher = filePath.publisher.collect().map { String($0) }

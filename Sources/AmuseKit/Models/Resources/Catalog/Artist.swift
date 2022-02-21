@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents an artist of an album where an artist can be one or more persons.
-    // https://developer.apple.com/documentation/applemusicapi/artist
+    
+    /// A resource object that represents an artist of an album where an artist can be one or more persons.
+    /// https://developer.apple.com/documentation/applemusicapi/artists-uip
+    /// Latest revision Feb 21 2022.
 
     struct Artist: Resource {
         public let attributes: Attributes?
@@ -22,8 +24,9 @@ public extension AmuseKit {
 
 public extension AmuseKit.Artist {
 
-    // The attributes for an artist object.
-    // https://developer.apple.com/documentation/applemusicapi/artist/attributes
+    /// The attributes for an artist resource.
+    /// https://developer.apple.com/documentation/applemusicapi/artists/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let editorialNotes: AmuseKit.EditorialNotes?
@@ -32,8 +35,9 @@ public extension AmuseKit.Artist {
         public let url: String
     }
 
-    // The relationships for an artist object.
-    // https://developer.apple.com/documentation/applemusicapi/artist/relationships
+    /// The relationships for an artist object.
+    /// https://developer.apple.com/documentation/applemusicapi/artist/relationships
+    /// Latest revision Feb 21 2022. 
 
     struct Relationships: Codable {
         public let albums: AmuseKit.AlbumsRelationship?

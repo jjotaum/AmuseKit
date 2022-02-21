@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents a station.
-    // https://developer.apple.com/documentation/applemusicapi/station
+    
+    /// A resource object that represents a station.
+    /// https://developer.apple.com/documentation/applemusicapi/stations
+    /// Latest revision Feb 21 2022.
 
     struct Station: Resource {
         public typealias Relationships = EmptyCodable
@@ -22,16 +24,20 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.Station {
-    // The attributes for a station object.
-    // https://developer.apple.com/documentation/applemusicapi/station/attributes
+    
+    /// The attributes for a station resource.
+    /// https://developer.apple.com/documentation/applemusicapi/stations/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let artwork: AmuseKit.Artwork
         public let durationInMillis: Int?
         public let editorialNotes: AmuseKit.EditorialNotes?
         public let episodeNumber: Int?
+        public let contentRating: String?
         public let isLive: Bool
         public let name: String
+        public let stationProviderName: String?
         public let url: String
     }
 }
