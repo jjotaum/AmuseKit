@@ -8,19 +8,21 @@
 import Foundation
 
 public enum PlaylistType: String, Codable {
-    // A playlist created by an Apple Music curator.
+    /// A playlist created by an Apple Music curator.
     case editorial
-    // external: A playlist created by a non-Apple curator or brand.
+    /// external: A playlist created by a non-Apple curator or brand.
     case external
-    // personal-mix: A personalized playlist for an Apple Music user.
+    /// personal-mix: A personalized playlist for an Apple Music user.
     case personal = "personal-mix"
-    // A playlist created and shared by an Apple Music user.
+    /// A playlist created and shared by an Apple Music user.
     case userShared = "user-shared"
 }
 
 public extension AmuseKit {
-    // A Resource object that represents a playlist.
-    // https://developer.apple.com/documentation/applemusicapi/playlist
+    
+    /// A Resource object that represents a playlist.
+    /// https://developer.apple.com/documentation/applemusicapi/playlists
+    /// Latest revision Feb 21 2022.
 
     struct Playlist: Resource {
         public let attributes: Attributes?
@@ -32,24 +34,29 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.Playlist {
-    // The attributes for a playlist object.
-    // https://developer.apple.com/documentation/applemusicapi/playlist/attributes
+    
+    /// The attributes for a playlist object.
+    /// https://developer.apple.com/documentation/applemusicapi/playlists/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let artwork: AmuseKit.Artwork?
-        public let curatorName: String?
+        public let curatorName: String
         public let description: AmuseKit.EditorialNotes?
+        public let isChart: Bool
         public let lastModifiedDate: String
+        public let playlistType: String
         public let name: String
         public let playParams: AmuseKit.PlayParameters
         public let url: String
+        public let trackTypes: [String]?
     }
 
-    // The relationships for a playlist object.
-    // https://developer.apple.com/documentation/applemusicapi/playlist/relationships
+    /// The relationships for a playlist object.
+    /// https://developer.apple.com/documentation/applemusicapi/playlist/relationships
 
     struct Relationships: Codable {
         public let curator: AmuseKit.CuratorsRelationship?
-        public let tracks: AmuseKit.TrackRelationship?
+        public let tracks: AmuseKit.SongRelationship?
     }
 }

@@ -33,7 +33,7 @@ amuseProvider.setUserCountryCode("USER_COUNTRY_CODE")
 ```
 
 
-### Retrieve User Library Playlists.
+### Retrieve All User's Library Playlists.
 
 ```swift
 amuseProvider.libraryPlaylists()
@@ -43,7 +43,7 @@ amuseProvider.libraryPlaylists()
     }
 ```
 
-### Retrieve User Library Albums.
+### Retrieve All User's Library Albums.
 
 ```swift
 amuseProvider.libraryAlbums()
@@ -53,13 +53,58 @@ amuseProvider.libraryAlbums()
     }
 ```
 
-### Retrieve User Library Songs.
+### Retrieve All User's Library Artists.
+
+```swift
+amuseProvider.libraryArtists()
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve All User's Library Songs.
 
 ```swift
 amuseProvider.librarySongs()
     .sink { _ in
     } receiveValue: { response in
         print(response.data)
+    }
+```
+
+### Retrieve All User Library Music Videos.
+
+```swift
+amuseProvider.libraryMusicVideos()
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Search on User's Library.
+
+```swift
+amuseProvider.librarySearch(searchTerm: "YOUR_QUERY_TEXT")
+    .sink { _ in
+    } receiveValue: { response in
+        // content will be found under results properties.
+        print(response.results?.albums)
+        print(response.results?.artists)
+        print(response.results?.playlists)
+        print(response.results?.songs)
+    }
+```
+
+### Search on User's Library for specific types.
+
+```swift
+amuseProvider.librarySearch([.playlists, .songs], searchTerm: "YOUR_QUERY_TEXT")
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.results?.playlists)
+        print(response.results?.songs)
     }
 ```
 
@@ -82,7 +127,6 @@ amuseProvider.catalogSearch(searchTerm: "YOUR_QUERY_TEXT")
 ```swift
 amuseProvider.catalogSearch([.playlists, .songs], searchTerm: "YOUR_QUERY_TEXT")
     .sink { _ in
-        // handle error
     } receiveValue: { response in
         print(response.results?.playlists)
         print(response.results?.songs)

@@ -28,7 +28,7 @@ extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     private var path: String {
         switch self {
         case .library(let type):
-            return "/v1/me/\(type.rawValue.replacingOccurrences(of: "-", with: "/"))"
+            return "/v1/me/\(type.lastPathComponent)"
         case .recommendations:
             return "/v1/me/recommendations"
         case .search(let countryCode):
@@ -52,5 +52,16 @@ extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
             throw AmuseKit.AmuseError.invalidRequest
         }
         return URLRequest(url: url)
+    }
+}
+
+fileprivate extension AmuseKit.LibraryResourceType {
+    var lastPathComponent: String {
+        switch self {
+        case .musicVideos:
+            return "library/music-videos"
+        default:
+            return rawValue.replacingOccurrences(of: "-", with: "/")
+        }
     }
 }

@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents a curator of resources.
-    // https://developer.apple.com/documentation/applemusicapi/curator
+    
+    /// A resource object that represents a curator.
+    /// https://developer.apple.com/documentation/applemusicapi/curators-uja
+    /// Latest revision Feb 21 2022.
 
     struct Curator: Resource {
         public let attributes: Attributes?
@@ -21,8 +23,10 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.Curator {
-    // The attributes for a curator object.
-    // https://developer.apple.com/documentation/applemusicapi/curator/attributes
+    
+    /// The attributes for a curator resource.
+    /// https://developer.apple.com/documentation/applemusicapi/curators/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let artwork: AmuseKit.Artwork
@@ -31,8 +35,8 @@ public extension AmuseKit.Curator {
         public let url: String
     }
 
-    // The relationships for a curator object.
-    // https://developer.apple.com/documentation/applemusicapi/curator/relationships
+    /// The relationships for a curator object.
+    /// https://developer.apple.com/documentation/applemusicapi/curator/relationships
 
     struct Relationships: Codable {
         public let playlists: AmuseKit.PlaylistRelationship?

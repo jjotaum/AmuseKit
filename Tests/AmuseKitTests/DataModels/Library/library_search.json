@@ -1,0 +1,802 @@
+{
+    "results": {
+        "library-artists": {
+            "href": "/v1/me/library/search?limit=25&term=The+Cranberries&types=library-artists",
+            "data": [
+                {
+                    "id": "r.nCW35V",
+                    "type": "library-artists",
+                    "href": "/v1/me/library/artists/r.nCW35V",
+                    "attributes": {
+                        "name": "The Cranberries"
+                    }
+                }
+            ]
+        },
+        "library-songs": {
+            "href": "/v1/me/library/search?limit=25&term=The+Cranberries&types=library-songs",
+            "next": "/v1/me/library/search?offset=25&term=The+Cranberries&types=library-songs",
+            "data": [
+                {
+                    "id": "i.PkdZZ4ZuPOB4z4",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.PkdZZ4ZuPOB4z4",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/36/11/d5/3611d5ee-eb88-2539-b52f-f593c710e9a6/4050538274080.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 283120,
+                        "releaseDate": "2017-04-28",
+                        "name": "Ode to My Family (Acoustic Version)",
+                        "hasLyrics": true,
+                        "albumName": "Something Else",
+                        "playParams": {
+                            "id": "i.PkdZZ4ZuPOB4z4",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1211821058"
+                        },
+                        "trackNumber": 8
+                    }
+                },
+                {
+                    "id": "i.qQdGbM0hNMdB7B",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.qQdGbM0hNMdB7B",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/18/6c/be/186cbe0c-5940-4877-a5c8-b3d0bd6b28c0/4050538451252.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 205480,
+                        "releaseDate": "2019-04-26",
+                        "name": "Crazy Heart",
+                        "hasLyrics": true,
+                        "albumName": "In the End",
+                        "playParams": {
+                            "id": "i.qQdGbM0hNMdB7B",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1448776814"
+                        },
+                        "trackNumber": 8
+                    }
+                },
+                {
+                    "id": "i.LVk62DRTZqYe0e",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.LVk62DRTZqYe0e",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d5/e1/3f/d5e13f0b-c20b-d818-4261-4748a8cfb3a0/00044006309125.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 251600,
+                        "releaseDate": "1996-04-30",
+                        "name": "Ave Maria (Pavarotti / O'Riordan) [Box Set Bonus Track]",
+                        "hasLyrics": true,
+                        "albumName": "To the Faithful Departed (The Complete Sessions 1996-1997)",
+                        "playParams": {
+                            "id": "i.LVk62DRTZqYe0e",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440661576"
+                        },
+                        "trackNumber": 17
+                    }
+                },
+                {
+                    "id": "i.LVk62YzUZqYe0e",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.LVk62YzUZqYe0e",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/58/90/72/58907293-f046-7d6c-800e-28ab165f68d6/18UMGIM43740.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 2,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 185213,
+                        "releaseDate": "1993-03-01",
+                        "name": "Uncertain ('Uncertain' EP Version)",
+                        "hasLyrics": true,
+                        "albumName": "Everybody Else Is Doing It, So Why Can't We? (Super Deluxe)",
+                        "playParams": {
+                            "id": "i.LVk62YzUZqYe0e",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1433942844"
+                        },
+                        "trackNumber": 11
+                    }
+                },
+                {
+                    "id": "i.qQdGZOBiNMdB7B",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.qQdGZOBiNMdB7B",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/38/47/fd3847f2-ca3b-1823-31e9-f1c24c2edad6/00008811270728.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 155827,
+                        "releaseDate": "2001-10-22",
+                        "name": "Never Grow Old",
+                        "hasLyrics": true,
+                        "albumName": "Wake Up and Smell the Coffee",
+                        "playParams": {
+                            "id": "i.qQdGZOBiNMdB7B",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1442413018"
+                        },
+                        "trackNumber": 1
+                    }
+                },
+                {
+                    "id": "i.V7Bv1aLS4kXxox",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.V7Bv1aLS4kXxox",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/b5/28/09/b5280939-6aa7-9054-b270-2f340bb1d849/00731452461124.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 215533,
+                        "releaseDate": "1999-04-19",
+                        "name": "You and Me",
+                        "hasLyrics": true,
+                        "albumName": "Bury the Hatchet",
+                        "playParams": {
+                            "id": "i.V7Bv1aLS4kXxox",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440924259"
+                        },
+                        "trackNumber": 4
+                    }
+                },
+                {
+                    "id": "i.V7Bv1bPs4kXxox",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.V7Bv1bPs4kXxox",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/23/0b/da/230bda6a-cc8b-c939-ea20-0bc8d2861c42/00602537801831.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 265067,
+                        "releaseDate": "1996-04-30",
+                        "name": "Free To Decide",
+                        "hasLyrics": true,
+                        "albumName": "To the Faithful Departed",
+                        "playParams": {
+                            "id": "i.V7Bv1bPs4kXxox",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440850882"
+                        },
+                        "trackNumber": 4
+                    }
+                },
+                {
+                    "id": "i.6xpNMANUY0dRzR",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.6xpNMANUY0dRzR",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/ce/3c/68/ce3c684e-b147-d580-b2ea-8655a854ebce/06UMGIM00853.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 218000,
+                        "releaseDate": "1993-03-01",
+                        "name": "Waltzing Back",
+                        "hasLyrics": true,
+                        "albumName": "Everybody Else Is Doing It, So Why Can't We?",
+                        "playParams": {
+                            "id": "i.6xpNMANUY0dRzR",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440912407"
+                        },
+                        "trackNumber": 5
+                    }
+                },
+                {
+                    "id": "i.qQdGbYlHNMdB7B",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.qQdGbYlHNMdB7B",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/ec/23/95/ec2395b6-ad4c-af89-d802-ea1ff1d973c2/5060156651780.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 233059,
+                        "releaseDate": "2012-02-22",
+                        "name": "So Good",
+                        "hasLyrics": true,
+                        "albumName": "Roses",
+                        "playParams": {
+                            "id": "i.qQdGbYlHNMdB7B",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1170115902"
+                        },
+                        "trackNumber": 10
+                    }
+                },
+                {
+                    "id": "i.PkdZ2LqCPOB4z4",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.PkdZ2LqCPOB4z4",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/36/11/d5/3611d5ee-eb88-2539-b52f-f593c710e9a6/4050538274080.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 256587,
+                        "releaseDate": "2017-04-28",
+                        "name": "Rupture",
+                        "hasLyrics": true,
+                        "albumName": "Something Else",
+                        "playParams": {
+                            "id": "i.PkdZ2LqCPOB4z4",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1211821057"
+                        },
+                        "trackNumber": 7
+                    }
+                },
+                {
+                    "id": "i.O1RG2MGu8WrQmQ",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.O1RG2MGu8WrQmQ",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/18/6c/be/186cbe0c-5940-4877-a5c8-b3d0bd6b28c0/4050538451252.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 278240,
+                        "releaseDate": "2019-04-26",
+                        "name": "Catch Me If You Can",
+                        "hasLyrics": true,
+                        "albumName": "In the End",
+                        "playParams": {
+                            "id": "i.O1RG2MGu8WrQmQ",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1448776811"
+                        },
+                        "trackNumber": 5
+                    }
+                },
+                {
+                    "id": "i.gelJJWACRPQ7a7",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.gelJJWACRPQ7a7",
+                    "attributes": {
+                        "artistName": "The Cranberries",
+                        "discNumber": 0,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 237374,
+                        "name": "Yesterday S Gone",
+                        "hasLyrics": false,
+                        "albumName": "MTV Unplugged",
+                        "playParams": {
+                            "id": "i.gelJJWACRPQ7a7",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": false
+                        },
+                        "trackNumber": 8
+                    }
+                },
+                {
+                    "id": "i.1YBNMk2T759YkY",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.1YBNMk2T759YkY",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/66/e0/22/66e022a7-610b-ea79-51b3-412b6701254b/20UMGIM35538.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 368280,
+                        "releaseDate": "1994-10-03",
+                        "name": "Daffodil Lament (Remastered 2020)",
+                        "hasLyrics": true,
+                        "albumName": "No Need To Argue (Deluxe)",
+                        "playParams": {
+                            "id": "i.1YBNMk2T759YkY",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1524343885"
+                        },
+                        "trackNumber": 12
+                    }
+                },
+                {
+                    "id": "i.PkdZ2R9FPOB4z4",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.PkdZ2R9FPOB4z4",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d5/e1/3f/d5e13f0b-c20b-d818-4261-4748a8cfb3a0/00044006309125.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 214733,
+                        "releaseDate": "1996-04-30",
+                        "name": "God Be With You (Box Set Bonus Track)",
+                        "hasLyrics": true,
+                        "albumName": "To the Faithful Departed (The Complete Sessions 1996-1997)",
+                        "playParams": {
+                            "id": "i.PkdZ2R9FPOB4z4",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440661578"
+                        },
+                        "trackNumber": 19
+                    }
+                },
+                {
+                    "id": "i.O1RGKJ9i8WrQmQ",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.O1RGKJ9i8WrQmQ",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/38/47/fd3847f2-ca3b-1823-31e9-f1c24c2edad6/00008811270728.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 141467,
+                        "releaseDate": "2001-10-23",
+                        "name": "Carry On",
+                        "hasLyrics": true,
+                        "albumName": "Wake Up and Smell the Coffee",
+                        "playParams": {
+                            "id": "i.O1RGKJ9i8WrQmQ",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1442413659"
+                        },
+                        "trackNumber": 12
+                    }
+                },
+                {
+                    "id": "i.1YBNMmGI759YkY",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.1YBNMmGI759YkY",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/b5/28/09/b5280939-6aa7-9054-b270-2f340bb1d849/00731452461124.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 327573,
+                        "releaseDate": "1999-03-10",
+                        "name": "Promises",
+                        "hasLyrics": true,
+                        "albumName": "Bury the Hatchet",
+                        "playParams": {
+                            "id": "i.1YBNMmGI759YkY",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440924258"
+                        },
+                        "trackNumber": 3
+                    }
+                },
+                {
+                    "id": "i.O1RG2W5f8WrQmQ",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.O1RG2W5f8WrQmQ",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/ec/23/95/ec2395b6-ad4c-af89-d802-ea1ff1d973c2/5060156651780.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 271553,
+                        "releaseDate": "2012-02-22",
+                        "name": "Fire & Soul",
+                        "hasLyrics": true,
+                        "albumName": "Roses",
+                        "playParams": {
+                            "id": "i.O1RG2W5f8WrQmQ",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1170115262"
+                        },
+                        "trackNumber": 3
+                    }
+                },
+                {
+                    "id": "i.gelJ8vPuRPQ7a7",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.gelJ8vPuRPQ7a7",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fd/38/47/fd3847f2-ca3b-1823-31e9-f1c24c2edad6/00008811270728.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 152733,
+                        "releaseDate": "2001-09-27",
+                        "name": "Salvation (Live In Paris)",
+                        "hasLyrics": true,
+                        "albumName": "Wake Up and Smell the Coffee",
+                        "playParams": {
+                            "id": "i.gelJ8vPuRPQ7a7",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1442413771"
+                        },
+                        "trackNumber": 14
+                    }
+                },
+                {
+                    "id": "i.AWPNMXvcNz6drd",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.AWPNMXvcNz6drd",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/66/e0/22/66e022a7-610b-ea79-51b3-412b6701254b/20UMGIM35538.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 174613,
+                        "releaseDate": "1994-10-03",
+                        "name": "The Icicle Melts (Remastered 2020)",
+                        "hasLyrics": true,
+                        "albumName": "No Need To Argue (Deluxe)",
+                        "playParams": {
+                            "id": "i.AWPNMXvcNz6drd",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1524343410"
+                        },
+                        "trackNumber": 7
+                    }
+                },
+                {
+                    "id": "i.AWPNMkBfNz6drd",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.AWPNMkBfNz6drd",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/ce/3c/68/ce3c684e-b147-d580-b2ea-8655a854ebce/06UMGIM00853.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 274707,
+                        "releaseDate": "1993-01-01",
+                        "name": "Linger",
+                        "hasLyrics": true,
+                        "albumName": "Everybody Else Is Doing It, So Why Can't We?",
+                        "playParams": {
+                            "id": "i.AWPNMkBfNz6drd",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440912413"
+                        },
+                        "trackNumber": 7
+                    }
+                },
+                {
+                    "id": "i.1YBN07rC759YkY",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.1YBN07rC759YkY",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/15/92/2b/15922b5b-79ac-9bf7-f936-f1995b0878f9/06UMGIM11278.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 262600,
+                        "releaseDate": "1999-04-27",
+                        "name": "Such a Shame",
+                        "hasLyrics": true,
+                        "albumName": "Bury the Hatchet (The Complete Sessions 1998-1999)",
+                        "playParams": {
+                            "id": "i.1YBN07rC759YkY",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440657366"
+                        },
+                        "trackNumber": 18
+                    }
+                },
+                {
+                    "id": "i.1YBN0qVH759YkY",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.1YBN0qVH759YkY",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/58/90/72/58907293-f046-7d6c-800e-28ab165f68d6/18UMGIM43740.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 2,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 224040,
+                        "releaseDate": "1993-03-01",
+                        "name": "Them (Xeric) ['Uncertain' EP Version]",
+                        "hasLyrics": true,
+                        "albumName": "Everybody Else Is Doing It, So Why Can't We? (Super Deluxe)",
+                        "playParams": {
+                            "id": "i.1YBN0qVH759YkY",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1433942848"
+                        },
+                        "trackNumber": 14
+                    }
+                },
+                {
+                    "id": "i.Qvzk26mH7zYDbD",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.Qvzk26mH7zYDbD",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/18/6c/be/186cbe0c-5940-4877-a5c8-b3d0bd6b28c0/4050538451252.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Alternative"
+                        ],
+                        "durationInMillis": 176880,
+                        "releaseDate": "2019-04-16",
+                        "name": "In the End",
+                        "hasLyrics": true,
+                        "albumName": "In the End",
+                        "playParams": {
+                            "id": "i.Qvzk26mH7zYDbD",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1448776818"
+                        },
+                        "trackNumber": 11
+                    }
+                },
+                {
+                    "id": "i.Qvzk2ZPF7zYDbD",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.Qvzk2ZPF7zYDbD",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/ec/23/95/ec2395b6-ad4c-af89-d802-ea1ff1d973c2/5060156651780.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Rock"
+                        ],
+                        "durationInMillis": 235440,
+                        "releaseDate": "2011-11-21",
+                        "name": "Tomorrow",
+                        "hasLyrics": true,
+                        "albumName": "Roses",
+                        "playParams": {
+                            "id": "i.Qvzk2ZPF7zYDbD",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1170115116"
+                        },
+                        "trackNumber": 2
+                    }
+                },
+                {
+                    "id": "i.gelJ8XJHRPQ7a7",
+                    "type": "library-songs",
+                    "href": "/v1/me/library/songs/i.gelJ8XJHRPQ7a7",
+                    "attributes": {
+                        "artwork": {
+                            "width": 1200,
+                            "height": 1200,
+                            "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/b5/28/09/b5280939-6aa7-9054-b270-2f340bb1d849/00731452461124.rgb.jpg/{w}x{h}bb.jpg"
+                        },
+                        "artistName": "The Cranberries",
+                        "discNumber": 1,
+                        "genreNames": [
+                            "Pop"
+                        ],
+                        "durationInMillis": 224440,
+                        "releaseDate": "1999-04-19",
+                        "name": "Desperate Andy",
+                        "hasLyrics": true,
+                        "albumName": "Bury the Hatchet",
+                        "playParams": {
+                            "id": "i.gelJ8XJHRPQ7a7",
+                            "kind": "song",
+                            "isLibrary": true,
+                            "reporting": true,
+                            "catalogId": "1440924267"
+                        },
+                        "trackNumber": 7
+                    }
+                }
+            ]
+        },
+        "library-albums": {
+            "href": "/v1/me/library/search?limit=25&term=The+Cranberries&types=library-albums",
+            "data": []
+        },
+        "library-playlists": {
+            "href": "/v1/me/library/search?limit=25&term=The+Cranberries&types=library-playlists",
+            "data": [
+                {
+                    "id": "p.b16GgWWToDzpqp",
+                    "type": "library-playlists",
+                    "href": "/v1/me/library/playlists/p.b16GgWWToDzpqp",
+                    "attributes": {
+                        "playParams": {
+                            "id": "p.b16GgWWToDzpqp",
+                            "kind": "playlist",
+                            "isLibrary": true
+                        },
+                        "name": "The Cranberries",
+                        "dateAdded": "2021-01-11T22:30:06Z",
+                        "isPublic": false,
+                        "canEdit": true,
+                        "hasCatalog": false
+                    }
+                }
+            ]
+        }
+    },
+    "meta": {
+        "results": {
+            "order": [
+                "library-artists",
+                "library-songs",
+                "library-albums",
+                "library-playlists"
+            ]
+        }
+    }
+}

@@ -8,8 +8,9 @@
 import Foundation
 
 public extension AmuseKit {
-    // A to-one or to-many relationship from one resource object to others.
-    // https://developer.apple.com/documentation/applemusicapi/relationship
+    /// A to-one or to-many relationship from one resource object to others.
+    /// https://developer.apple.com/documentation/applemusicapi/relationship
+    /// Latest revision Feb 21 2022.
 
     struct Relationship<Resource: Codable>: Codable {
         public let data: [Resource]?
@@ -23,10 +24,10 @@ public extension AmuseKit {
     typealias GenresRelationship = Relationship<Genre>
     typealias MusicVideosRelationship = Relationship<MusicVideo>
     typealias PlaylistRelationship = Relationship<Playlist>
-    typealias TrackRelationship = Relationship<Track>
+    typealias SongRelationship = Relationship<Song>
 
     typealias LibraryAlbumsRelationship = Relationship<LibraryAlbum>
     typealias LibraryArtistsRelationship = Relationship<LibraryArtist>
     typealias LibraryPlaylistsRelationship = Relationship<LibraryPlaylist>
-    typealias LibraryTracksRelationship = Relationship<LibraryTrack>
+    typealias LibraryTracksRelationship = Relationship<LibrarySong>
 }

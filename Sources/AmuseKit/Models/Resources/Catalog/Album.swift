@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // A Resource object that represents an album.
-    // https://developer.apple.com/documentation/applemusicapi/album
+    
+    /// A resource object that represents an album.
+    /// https://developer.apple.com/documentation/applemusicapi/albums
+    /// Latest revision Feb 21 2022.
 
     struct Album: Resource {
         public let attributes: Attributes?
@@ -21,34 +23,38 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.Album {
-    // The attributes for an album object.
-    // https://developer.apple.com/documentation/applemusicapi/album/attributes
+    
+    /// The attributes for an album resource.
+    /// https://developer.apple.com/documentation/applemusicapi/albums/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
-        public let albumName: String?
         public let artistName: String
-        public let artwork: AmuseKit.Artwork?
+        public let albumName: String?
+        public let artwork: AmuseKit.Artwork
         public let contentRating: String?
         public let copyright: String?
         public let editorialNotes: AmuseKit.EditorialNotes?
         public let genreNames: [String]
+        public let isCompilation: Bool
         public let isComplete: Bool
+        public let isMasteredForItunes: Bool
         public let isSingle: Bool
         public let name: String
         public let playParams: AmuseKit.PlayParameters?
         public let recordLabel: String?
-        public let releaseDate: String
+        public let releaseDate: String?
         public let trackCount: Int
+        public let upc: String
         public let url: String
-        public let isMasteredForItunes: Bool
     }
 
-    // The relationships for an album object.
-    // https://developer.apple.com/documentation/applemusicapi/album/relationships
+    /// The relationships for an album object.
+    /// https://developer.apple.com/documentation/applemusicapi/album/relationships
 
     struct Relationships: Codable {
         public let artists: AmuseKit.AlbumsRelationship?
         public let genres: AmuseKit.GenresRelationship?
-        public let tracks: AmuseKit.TrackRelationship?
+        public let tracks: AmuseKit.SongRelationship?
     }
 }

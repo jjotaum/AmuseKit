@@ -8,8 +8,10 @@
 import Foundation
 
 public extension AmuseKit {
-    // An object that represents a genre for resources.
-    // https://developer.apple.com/documentation/applemusicapi/genre
+    
+    /// A resource object that represents a music genre.
+    /// https://developer.apple.com/documentation/applemusicapi/genres
+    /// Latest revision Feb 21 2022.
 
     struct Genre: Resource {
         public typealias Relationships = EmptyCodable
@@ -22,10 +24,14 @@ public extension AmuseKit {
 }
 
 public extension AmuseKit.Genre {
-    // The attributes for a genre object.
-    // https://developer.apple.com/documentation/applemusicapi/genre/attributes
+    
+    /// The attributes for a genre resource.
+    /// https://developer.apple.com/documentation/applemusicapi/genres/attributes
+    /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
         public let name: String
+        public let parentId: String?
+        public let parentName: String?
     }
 }
