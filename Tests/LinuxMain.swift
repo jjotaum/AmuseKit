@@ -1,6 +1,6 @@
 import XCTest
-import AmuseTests
+import AmuseKitTests
 
 var tests = [XCTestCaseEntry]()
-tests += DataProviderTests.allTests()
+tests += AmuseKitTests.allTests()
 XCTMain(tests)
