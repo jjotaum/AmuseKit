@@ -37,6 +37,87 @@ final class DataProviderTests: XCTestCase {
 
         wait(for: [completionExpectation, valueExpectation], timeout: timeout)
     }
+    
+    func testCatalogPlaylists() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_playlists")
+        try mock.catalogPlaylists(ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogAlbums() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_albums")
+        try mock.catalogAlbums(ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogArtists() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_artists")
+        try mock.catalogArtists(ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogSongs() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_songs")
+        try mock.catalogSongs(ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogMusicVideos() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_music-videos")
+        try mock.catalogMusicVideos(ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { response in
+                print(response)
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
 
     func testLibrarySearch() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -152,6 +233,11 @@ final class DataProviderTests: XCTestCase {
 
     static var allTests = [
         ("testCatalogSearch", testCatalogSearch),
+        ("testCatalogPlaylists", testCatalogPlaylists),
+        ("testCatalogAlbums", testCatalogAlbums),
+        ("testCatalogArtists", testCatalogArtists),
+        ("testCatalogSongs", testCatalogSongs),
+        ("testCatalogMusicVideos", testCatalogMusicVideos),
         ("testLibrarySearch", testLibrarySearch),
         ("testLibraryPlaylists", testLibraryPlaylists),
         ("testLibraryAlbums", testLibraryAlbums),

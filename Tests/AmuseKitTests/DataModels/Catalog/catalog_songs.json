@@ -1,0 +1,133 @@
+{
+    "data": [
+      {
+        "id": "1560735548",
+        "type": "songs",
+        "href": "/v1/catalog/us/songs/1560735548",
+        "attributes": {
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/af/22/53/af225371-463f-d244-0e5c-f3e4449ca160/mzaf_615547142465987226.plus.aac.p.m4a"
+            }
+          ],
+          "artwork": {
+            "width": 3000,
+            "height": 3000,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/33/fd/32/33fd32b1-0e43-9b4a-8ed6-19643f23544e/21UMGIM26092.rgb.jpg/{w}x{h}bb.jpg",
+            "bgColor": "675f9a",
+            "textColor1": "f3f6fb",
+            "textColor2": "fbeaf0",
+            "textColor3": "d7d8e8",
+            "textColor4": "decedf"
+          },
+          "artistName": "Olivia Rodrigo",
+          "url": "https://music.apple.com/us/album/deja-vu/1560735414?i=1560735548",
+          "discNumber": 1,
+          "genreNames": [
+            "Pop",
+            "Music"
+          ],
+          "durationInMillis": 215508,
+          "releaseDate": "2021-04-01",
+          "isAppleDigitalMaster": true,
+          "name": "deja vu",
+          "isrc": "USUG12101240",
+          "hasLyrics": true,
+          "albumName": "SOUR",
+          "playParams": {
+            "id": "1560735548",
+            "kind": "song"
+          },
+          "trackNumber": 5,
+          "composerName": "Olivia Rodrigo & Daniel Nigro",
+          "contentRating": "explicit"
+        },
+        "relationships": {
+          "albums": {
+            "href": "/v1/catalog/us/songs/1560735548/albums",
+            "data": [
+              {
+                "id": "1560735414",
+                "type": "albums",
+                "href": "/v1/catalog/us/albums/1560735414"
+              }
+            ]
+          },
+          "artists": {
+            "href": "/v1/catalog/us/songs/1560735548/artists",
+            "data": [
+              {
+                "id": "979458609",
+                "type": "artists",
+                "href": "/v1/catalog/us/artists/979458609"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1572278914",
+        "type": "songs",
+        "href": "/v1/catalog/us/songs/1572278914",
+        "attributes": {
+          "previews": [
+            {
+              "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/38/64/27/3864275c-3ee2-4e25-540b-a6dcaa78c142/mzaf_1359480979331484031.plus.aac.p.m4a"
+            }
+          ],
+          "artwork": {
+            "width": 3000,
+            "height": 3000,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/03/fb/9e/03fb9e9c-43bb-2bfd-cccc-920a91affd12/21UMGIM51898.rgb.jpg/{w}x{h}bb.jpg",
+            "bgColor": "000300",
+            "textColor1": "a5d961",
+            "textColor2": "99d888",
+            "textColor3": "84ae4e",
+            "textColor4": "7aad6d"
+          },
+          "artistName": "Brandee Younger",
+          "url": "https://music.apple.com/us/album/reclamation/1572278902?i=1572278914",
+          "discNumber": 1,
+          "genreNames": [
+            "Jazz",
+            "Music"
+          ],
+          "durationInMillis": 402196,
+          "releaseDate": "2021-07-22",
+          "isAppleDigitalMaster": true,
+          "name": "Reclamation",
+          "isrc": "USUM72104683",
+          "hasLyrics": false,
+          "albumName": "Somewhere Different",
+          "playParams": {
+            "id": "1572278914",
+            "kind": "song"
+          },
+          "trackNumber": 1,
+          "composerName": "Brandee Younger"
+        },
+        "relationships": {
+          "albums": {
+            "href": "/v1/catalog/us/songs/1572278914/albums",
+            "data": [
+              {
+                "id": "1572278902",
+                "type": "albums",
+                "href": "/v1/catalog/us/albums/1572278902"
+              }
+            ]
+          },
+          "artists": {
+            "href": "/v1/catalog/us/songs/1572278914/artists",
+            "data": [
+              {
+                "id": "327193278",
+                "type": "artists",
+                "href": "/v1/catalog/us/artists/327193278"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }

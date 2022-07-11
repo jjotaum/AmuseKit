@@ -17,6 +17,7 @@ protocol URLRequestConvertible {
 
 extension AmuseKit {
     enum Router {
+        case catalog(countryCode: String, resourceType: CatalogResourceType)
         case library(LibraryResourceType)
         case recommendations
         case search(countryCode: String)
@@ -27,6 +28,8 @@ extension AmuseKit {
 extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     private var path: String {
         switch self {
+        case .catalog(let countryCode, let resourceType):
+            return "/v1/catalog/\(countryCode)/search/\(resourceType)"
         case .library(let type):
             return "/v1/me/\(type.lastPathComponent)"
         case .recommendations:

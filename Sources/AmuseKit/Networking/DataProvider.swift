@@ -10,6 +10,12 @@ import Foundation
 import class KeychainAccess.Keychain
 
 public extension AmuseKit {
+    typealias CatalogPlaylistResponse = ResponseRoot<Playlist, EmptyCodable>
+    typealias CatalogAlbumResponse = ResponseRoot<Album, EmptyCodable>
+    typealias CatalogArtistResponse = ResponseRoot<Artist, EmptyCodable>
+    typealias CatalogSongResponse = ResponseRoot<Song, EmptyCodable>
+    typealias CatalogMusicVideoResponse = ResponseRoot<MusicVideo, EmptyCodable>
+    
     typealias LibraryPlaylistResponse = ResponseRoot<LibraryPlaylist, EmptyCodable>
     typealias LibraryAlbumResponse = ResponseRoot<LibraryAlbum, EmptyCodable>
     typealias LibraryArtistResponse = ResponseRoot<LibraryArtist, EmptyCodable>
@@ -48,6 +54,39 @@ public extension AmuseKit {
         
         public func setUserCountryCode(_ userCountryCode: String) {
             self.userCountryCode = userCountryCode
+        }
+        
+        // MARK: - Catalog Methods
+        
+        public func catalogPlaylists(ids: [String]) throws -> AnyPublisher<AmuseKit.CatalogPlaylistResponse, Error> {
+            try catalogRequest(.catalog(countryCode: userCountryCode, resourceType: .playlists), ids: ids)
+        }
+        
+        public func catalogAlbums(ids: [String]) throws -> AnyPublisher<AmuseKit.CatalogAlbumResponse, Error> {
+            try catalogRequest(.catalog(countryCode: userCountryCode, resourceType: .albums), ids: ids)
+        }
+        
+        public func catalogArtists(ids: [String]) throws -> AnyPublisher<AmuseKit.CatalogArtistResponse, Error> {
+            try catalogRequest(.catalog(countryCode: userCountryCode, resourceType: .artists), ids: ids)
+        }
+        
+        public func catalogSongs(ids: [String]) throws -> AnyPublisher<AmuseKit.CatalogSongResponse, Error> {
+            try catalogRequest(.catalog(countryCode: userCountryCode, resourceType: .songs), ids: ids)
+        }
+        
+        public func catalogMusicVideos(ids: [String]) throws -> AnyPublisher<AmuseKit.CatalogMusicVideoResponse, Error> {
+            try catalogRequest(.catalog(countryCode: userCountryCode, resourceType: .musicVideos), ids: ids)
+        }
+        
+        private func catalogRequest<T: Codable>(_ router: Router, ids: [String]) throws -> AnyPublisher<T, Error> {
+            guard let developerToken = storage.developerToken else {
+                throw AmuseKit.AmuseError.missingDevToken
+            }
+
+            var request = try router.asURLRequest([.init(name: "ids", value: ids.joined(separator: ","))])
+            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
+            request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
+            return try service.publisher(with: request)
         }
 
         // MARK: - Library Methods
