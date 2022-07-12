@@ -17,6 +17,89 @@ final class DataProviderTests: XCTestCase {
     override func tearDown() {
         tasks = []
     }
+    
+    // MARK: - Catalog Methods
+    
+    func testCatalogAlbums() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_albums")
+        try mock.catalog(.albums, ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogArtists() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_artists")
+        try mock.catalog(.artists, ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogMusicVideos() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_music-videos")
+        try mock.catalog(.musicVideos, ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { response in
+                print(response)
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogPlaylists() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_playlists")
+        try mock.catalog(.playlists, ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testCatalogSongs() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "catalog_songs")
+        try mock.catalog(.songs, ids: ["123", "456", "789"])
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
 
     func testCatalogSearch() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -38,127 +121,13 @@ final class DataProviderTests: XCTestCase {
         wait(for: [completionExpectation, valueExpectation], timeout: timeout)
     }
     
-    func testCatalogPlaylists() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "catalog_playlists")
-        try mock.catalogPlaylists(ids: ["123", "456", "789"])
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-    
-    func testCatalogAlbums() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "catalog_albums")
-        try mock.catalogAlbums(ids: ["123", "456", "789"])
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-    
-    func testCatalogArtists() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "catalog_artists")
-        try mock.catalogArtists(ids: ["123", "456", "789"])
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-    
-    func testCatalogSongs() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "catalog_songs")
-        try mock.catalogSongs(ids: ["123", "456", "789"])
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-    
-    func testCatalogMusicVideos() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "catalog_music-videos")
-        try mock.catalogMusicVideos(ids: ["123", "456", "789"])
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { response in
-                print(response)
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-
-    func testLibrarySearch() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "library_search")
-        try mock.librarySearch(searchTerm: "")
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.results?.playlists)
-                XCTAssertNotNil(value.results?.albums)
-                XCTAssertNotNil(value.results?.artists)
-                XCTAssertNotNil(value.results?.songs)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
-
-    func testLibraryPlaylists() throws {
-        let completionExpectation = XCTestExpectation(description: "completion should be called")
-        let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "library_playlists")
-        try mock.libraryPlaylists()
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in
-                completionExpectation.fulfill()
-            }, receiveValue: { value in
-                XCTAssertNotNil(value.data)
-                valueExpectation.fulfill()
-            }).store(in: &tasks)
-
-        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
-    }
+    // MARK: Library Methods
     
     func testLibraryAlbums() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
         let mock = mockDataProvider(resourceName: "library_albums")
-        try mock.libraryAlbums()
+        try mock.library(.albums)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in
                 completionExpectation.fulfill()
@@ -174,7 +143,7 @@ final class DataProviderTests: XCTestCase {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
         let mock = mockDataProvider(resourceName: "library_artists")
-        try mock.libraryArtists()
+        try mock.library(.artists)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in
                 completionExpectation.fulfill()
@@ -185,12 +154,12 @@ final class DataProviderTests: XCTestCase {
 
         wait(for: [completionExpectation, valueExpectation], timeout: timeout)
     }
-
-    func testLibrarySongs() throws {
+    
+    func testLibraryPlaylists() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
-        let mock = mockDataProvider(resourceName: "library_songs")
-        try mock.librarySongs()
+        let mock = mockDataProvider(resourceName: "library_playlists")
+        try mock.library(.playlists)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in
                 completionExpectation.fulfill()
@@ -206,13 +175,49 @@ final class DataProviderTests: XCTestCase {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
         let mock = mockDataProvider(resourceName: "library_music-videos")
-        try mock.libraryMusicVideos()
+        try mock.library(.musicVideos)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { error in
                 print(error)
                 completionExpectation.fulfill()
             }, receiveValue: { value in
                 XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+
+
+    func testLibrarySongs() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "library_songs")
+        try mock.library(.songs)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.data)
+                valueExpectation.fulfill()
+            }).store(in: &tasks)
+
+        wait(for: [completionExpectation, valueExpectation], timeout: timeout)
+    }
+    
+    func testLibrarySearch() throws {
+        let completionExpectation = XCTestExpectation(description: "completion should be called")
+        let valueExpectation = XCTestExpectation(description: "value callback should be called")
+        let mock = mockDataProvider(resourceName: "library_search")
+        try mock.librarySearch(searchTerm: "")
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in
+                completionExpectation.fulfill()
+            }, receiveValue: { value in
+                XCTAssertNotNil(value.results?.playlists)
+                XCTAssertNotNil(value.results?.albums)
+                XCTAssertNotNil(value.results?.artists)
+                XCTAssertNotNil(value.results?.songs)
                 valueExpectation.fulfill()
             }).store(in: &tasks)
 
@@ -232,18 +237,20 @@ final class DataProviderTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testCatalogSearch", testCatalogSearch),
-        ("testCatalogPlaylists", testCatalogPlaylists),
+        // Catalog
         ("testCatalogAlbums", testCatalogAlbums),
         ("testCatalogArtists", testCatalogArtists),
-        ("testCatalogSongs", testCatalogSongs),
         ("testCatalogMusicVideos", testCatalogMusicVideos),
-        ("testLibrarySearch", testLibrarySearch),
-        ("testLibraryPlaylists", testLibraryPlaylists),
+        ("testCatalogPlaylists", testCatalogPlaylists),
+        ("testCatalogSongs", testCatalogSongs),
+        ("testCatalogSearch", testCatalogSearch),
+        // Library
         ("testLibraryAlbums", testLibraryAlbums),
         ("testLibraryArtists", testLibraryArtists),
+        ("testLibraryMusicVideos", testLibraryMusicVideos),
+        ("testLibraryPlaylists", testLibraryPlaylists),
         ("testLibrarySongs", testLibrarySongs),
-        ("testLibraryMusicVideos", testLibraryMusicVideos)
+        ("testLibrarySearch", testLibrarySearch)
     ]
 }
 

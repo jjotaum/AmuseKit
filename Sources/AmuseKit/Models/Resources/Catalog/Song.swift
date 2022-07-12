@@ -10,7 +10,7 @@ import Foundation
 public extension AmuseKit {
     
     /// A resource object that represents a song.
-    /// https://developer.apple.com/documentation/applemusicapi/songs-um8.
+    /// https://developer.apple.com/documentation/applemusicapi/songs
     /// Latest revision Feb 21 2022.
 
     struct Song: Resource {
