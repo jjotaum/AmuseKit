@@ -30,7 +30,6 @@ public extension AmuseKit.Album {
 
     struct Attributes: Codable {
         public let artistName: String
-        public let albumName: String?
         public let artwork: AmuseKit.Artwork
         public let contentRating: String?
         public let copyright: String?

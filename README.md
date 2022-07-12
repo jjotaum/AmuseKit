@@ -32,21 +32,85 @@ amuseProvider.setUserToken("USER_TOKEN")
 amuseProvider.setUserCountryCode("USER_COUNTRY_CODE")
 ```
 
-
-### Retrieve All User's Library Playlists.
+### Retrieve multiple Albums from Apple Music catalog by ids.
 
 ```swift
-amuseProvider.libraryPlaylists()
+amuseProvider.catalog(.albums, ids: ["123", "456", "789"])
     .sink { _ in
     } receiveValue: { response in
         print(response.data)
     }
 ```
 
+### Retrieve multiple Artists from Apple Music catalog by ids.
+
+```swift
+amuseProvider.catalog(.artists, ids: ["123", "456", "789"])
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve multiple Music Videos from Apple Music catalog by ids.
+
+```swift
+amuseProvider.catalog(.musicVideos, ids: ["123", "456", "789"])
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve multiple Playlists from Apple Music catalog by ids.
+
+```swift
+amuseProvider.catalog(.playlists, ids: ["123", "456", "789"])
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve multiple Songs from Apple Music catalog by ids.
+
+```swift
+amuseProvider.catalog(.songs, ids: ["123", "456", "789"])
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Search on Apple Music catalog.
+
+```swift
+amuseProvider.catalogSearch(searchTerm: "YOUR_QUERY_TEXT")
+    .sink { _ in
+    } receiveValue: { response in
+        // content will be found under results properties.
+        print(response.results?.albums)
+        print(response.results?.artists)
+        print(response.results?.playlists)
+        print(response.results?.songs)
+    }
+```
+
+### Search on Apple Music catalog for specific types.
+
+```swift
+amuseProvider.catalogSearch([.playlists, .songs], searchTerm: "YOUR_QUERY_TEXT")
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.results?.playlists)
+        print(response.results?.songs)
+    }
+```
+
 ### Retrieve All User's Library Albums.
 
 ```swift
-amuseProvider.libraryAlbums()
+amuseProvider.library(.albums)
     .sink { _ in
     } receiveValue: { response in
         print(response.data)
@@ -56,17 +120,7 @@ amuseProvider.libraryAlbums()
 ### Retrieve All User's Library Artists.
 
 ```swift
-amuseProvider.libraryArtists()
-    .sink { _ in
-    } receiveValue: { response in
-        print(response.data)
-    }
-```
-
-### Retrieve All User's Library Songs.
-
-```swift
-amuseProvider.librarySongs()
+amuseProvider.library(.artists)
     .sink { _ in
     } receiveValue: { response in
         print(response.data)
@@ -76,7 +130,27 @@ amuseProvider.librarySongs()
 ### Retrieve All User Library Music Videos.
 
 ```swift
-amuseProvider.libraryMusicVideos()
+amuseProvider.library(.musicVideos)
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve All User's Library Playlists.
+
+```swift
+amuseProvider.library(.playlists)
+    .sink { _ in
+    } receiveValue: { response in
+        print(response.data)
+    }
+```
+
+### Retrieve All User's Library Songs.
+
+```swift
+amuseProvider.library(.songs)
     .sink { _ in
     } receiveValue: { response in
         print(response.data)
@@ -101,31 +175,6 @@ amuseProvider.librarySearch(searchTerm: "YOUR_QUERY_TEXT")
 
 ```swift
 amuseProvider.librarySearch([.playlists, .songs], searchTerm: "YOUR_QUERY_TEXT")
-    .sink { _ in
-    } receiveValue: { response in
-        print(response.results?.playlists)
-        print(response.results?.songs)
-    }
-```
-
-### Search on Apple Music catalog.
-
-```swift
-amuseProvider.catalogSearch(searchTerm: "YOUR_QUERY_TEXT")
-    .sink { _ in
-    } receiveValue: { response in
-        // content will be found under results properties.
-        print(response.results?.albums)
-        print(response.results?.artists)
-        print(response.results?.playlists)
-        print(response.results?.songs)
-    }
-```
-
-### Search on Apple Music catalog for specific types.
-
-```swift
-amuseProvider.catalogSearch([.playlists, .songs], searchTerm: "YOUR_QUERY_TEXT")
     .sink { _ in
     } receiveValue: { response in
         print(response.results?.playlists)

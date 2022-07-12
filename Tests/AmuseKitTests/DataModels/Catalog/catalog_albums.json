@@ -1,0 +1,1224 @@
+{
+    "data": [
+      {
+        "id": "1564530719",
+        "type": "albums",
+        "href": "/v1/catalog/us/albums/1564530719",
+        "attributes": {
+          "artwork": {
+            "width": 3000,
+            "height": 3000,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+            "bgColor": "6d4d3a",
+            "textColor1": "fcfbf9",
+            "textColor2": "ead3b5",
+            "textColor3": "e0d8d3",
+            "textColor4": "d1b89c"
+          },
+          "artistName": "Billie Eilish",
+          "isSingle": false,
+          "url": "https://music.apple.com/us/album/happier-than-ever/1564530719",
+          "isComplete": true,
+          "genreNames": [
+            "Alternative",
+            "Music"
+          ],
+          "trackCount": 16,
+          "isMasteredForItunes": true,
+          "releaseDate": "2021-07-30",
+          "name": "Happier Than Ever",
+          "recordLabel": "Darkroom/Interscope Records",
+          "upc": "00602438254743",
+          "copyright": "℗ 2021 Darkroom/Interscope Records",
+          "playParams": {
+            "id": "1564530719",
+            "kind": "album"
+          },
+          "editorialNotes": {
+            "standard": "“It wasn't forced, it wasn't pressured, it wasn't scary,” Billie Eilish tells Apple Music of making <i>Happier Than Ever</i>. “It was nice.” Once again written and recorded entirely with her brother FINNEAS, Eilish’s second LP finds the 19-year-old singer-songwriter in a deeply reflective state, using the first year of the pandemic to process the many ways her life has changed and she’s evolved since so quickly becoming one of the world’s most famous and influential teenagers. “I feel like everything I've created before this, as much as I love it, was kind of a battle with myself,” she says. “I've actually talked to artists that are now going through the rise and what I've said to them is, ‘I know what it's like, but I also don't know what it's like for you.’ Because everybody goes through something completely different.”<br />\nA noticeable departure from the genre-averse, slightly sinister edge of 2019’s <i>WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</i>, much of the production and arrangements here feel open and airy by comparison, inspired in large part by the placid mid-century pop and jazz of torch singer Julie London. And whether she’s sharing new perspective on age (“Getting Older”), sensuality (“Oxytocin”), or the absurdity of fame (“NDA”), there’s a sense of genuine freedom—if not peace—in Eilish’s singing, her voice able to change shape and size as she sees fit, an instrument under her control and no one else's. “I started to feel like a parody of myself, which is super weird,” she says. “I just tried to listen to myself and figure out what I actually liked versus what I thought I would have liked in the past. I had to really evaluate myself and be like, 'What the hell do I want with myself right now?'”<br />\nIt’s a sign of growth, most striking in the clear skies of “my future” and the emotional clarity of the album’s towering title cut, which starts as a gentle ballad and blossoms, quite naturally and unexpectedly, into a growing wave of distorted guitars and distant screams. Both sound like breakthroughs. “There was no thought of, ‘What's this going to be? What track is this?’” she says of the writing process. “We just started writing and we kept writing. Over time, it just literally created itself. It just happened. It was easy.”",
+            "short": "“It wasn't forced, it wasn't pressured, it wasn't scary—it was nice.”"
+          },
+          "isCompilation": false,
+          "contentRating": "explicit"
+        },
+        "relationships": {
+          "tracks": {
+            "href": "/v1/catalog/us/albums/1564530719/tracks",
+            "data": [
+              {
+                "id": "1564530724",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530724",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/04/e2/60/04e260c9-f530-56cf-9bf3-b163ae054371/mzaf_5315780970243830358.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/getting-older/1564530719?i=1564530724",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 244221,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Getting Older",
+                  "isrc": "USUM72105922",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530724",
+                    "kind": "song"
+                  },
+                  "trackNumber": 1,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530936",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530936",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/76/00/15/76001558-8318-8baa-555c-37b2f591e9c7/mzaf_11801203009829344130.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/i-didnt-change-my-number/1564530719?i=1564530936",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 158463,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "I Didn't Change My Number",
+                  "isrc": "USUM72105926",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530936",
+                    "kind": "song"
+                  },
+                  "trackNumber": 2,
+                  "composerName": "Billie Eilish & FINNEAS",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1564530941",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530941",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/65/90/fa/6590fa66-c592-502b-2122-3395f1f3d002/mzaf_5653008341160715810.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/billie-bossa-nova/1564530719?i=1564530941",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 196731,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Billie Bossa Nova",
+                  "isrc": "USUM72105927",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530941",
+                    "kind": "song"
+                  },
+                  "trackNumber": 3,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530943",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530943",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/28/4e/b1/284eb12a-bd00-40aa-6d51-a9924a8e4c13/mzaf_3712897583725168386.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/my-future/1564530719?i=1564530943",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 210005,
+                  "releaseDate": "2020-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "my future",
+                  "isrc": "USUM72013019",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530943",
+                    "kind": "song"
+                  },
+                  "trackNumber": 4,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530949",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530949",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/43/99/e3/4399e3d8-74c4-a9f5-62b7-099664cca38e/mzaf_12225089916921844134.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/oxytocin/1564530719?i=1564530949",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 210233,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Oxytocin",
+                  "isrc": "USUM72104675",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530949",
+                    "kind": "song"
+                  },
+                  "trackNumber": 5,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530953",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530953",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/f2/d5/54/f2d5542b-7bb3-7b07-d67c-4cbf5da3d522/mzaf_16859115749010897791.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/goldwing/1564530719?i=1564530953",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 151537,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "GOLDWING",
+                  "isrc": "USUM72105928",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530953",
+                    "kind": "song"
+                  },
+                  "trackNumber": 6,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530954",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530954",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/00/41/50/00415015-cd4b-97cf-8de3-59e492820f6d/mzaf_5951024147918198475.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/lost-cause/1564530719?i=1564530954",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 212496,
+                  "releaseDate": "2021-06-02",
+                  "isAppleDigitalMaster": true,
+                  "name": "Lost Cause",
+                  "isrc": "USUM72105929",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530954",
+                    "kind": "song"
+                  },
+                  "trackNumber": 7,
+                  "composerName": "Billie Eilish & FINNEAS",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1564530955",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530955",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/52/3a/c5/523ac5af-ac88-ca61-4836-ec0414d056d0/mzaf_16242563239765458479.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/halleys-comet/1564530719?i=1564530955",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 234761,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Halley's Comet",
+                  "isrc": "USUM72105930",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530955",
+                    "kind": "song"
+                  },
+                  "trackNumber": 8,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530956",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530956",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/80/48/e0/8048e0b4-ea09-dc71-a4f4-929e93b302ce/mzaf_7867151888171163111.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/not-my-responsibility/1564530719?i=1564530956",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 227680,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Not My Responsibility",
+                  "isrc": "USUM72105931",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530956",
+                    "kind": "song"
+                  },
+                  "trackNumber": 9,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564530959",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530959",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/10/8e/11/108e117f-5993-f5fe-2487-ef452d61fb57/mzaf_12601475935400968927.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/overheated/1564530719?i=1564530959",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 214059,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "OverHeated",
+                  "isrc": "USUM72105932",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530959",
+                    "kind": "song"
+                  },
+                  "trackNumber": 10,
+                  "composerName": "Billie Eilish & FINNEAS",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1564530960",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564530960",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/e2/14/fd/e214fdbd-e90a-d494-8d46-00544ae229a7/mzaf_123186550610641606.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/everybody-dies/1564530719?i=1564530960",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 206623,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Everybody Dies",
+                  "isrc": "USUM72105933",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564530960",
+                    "kind": "song"
+                  },
+                  "trackNumber": 11,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564531176",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564531176",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/08/a9/c8/08a9c870-211f-4b23-1621-08d64fbb5ba5/mzaf_11543444132301153890.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/your-power/1564530719?i=1564531176",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 245897,
+                  "releaseDate": "2021-04-29",
+                  "isAppleDigitalMaster": true,
+                  "name": "Your Power",
+                  "isrc": "USUM72105934",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564531176",
+                    "kind": "song"
+                  },
+                  "trackNumber": 12,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564531177",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564531177",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/77/a8/a7/77a8a728-dffc-e1e9-df26-970a9857ac91/mzaf_12628913301493234185.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/nda/1564530719?i=1564531177",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 195777,
+                  "releaseDate": "2021-06-09",
+                  "isAppleDigitalMaster": true,
+                  "name": "NDA",
+                  "isrc": "USUM72105935",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564531177",
+                    "kind": "song"
+                  },
+                  "trackNumber": 13,
+                  "composerName": "Billie Eilish & FINNEAS",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1564531181",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564531181",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/0c/5f/10/0c5f101c-8c61-3a40-6f53-0c16fd3d13ae/mzaf_3716904370840330224.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/therefore-i-am/1564530719?i=1564531181",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 173539,
+                  "releaseDate": "2020-11-12",
+                  "isAppleDigitalMaster": true,
+                  "name": "Therefore I Am",
+                  "isrc": "USUM72021500",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564531181",
+                    "kind": "song"
+                  },
+                  "trackNumber": 14,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              },
+              {
+                "id": "1564531202",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564531202",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/d6/6f/58/d66f58c4-50ad-4978-971c-b19c022a440b/mzaf_3392528453380582564.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/happier-than-ever/1564530719?i=1564531202",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 298899,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Happier Than Ever",
+                  "isrc": "USUM72105936",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564531202",
+                    "kind": "song"
+                  },
+                  "trackNumber": 15,
+                  "composerName": "Billie Eilish & FINNEAS",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1564531204",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1564531204",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/d4/74/32/d4743220-71aa-0c3c-2cc3-0a1e7ad5f6b6/mzaf_7879646835645832144.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/f3/c9/2df3c9fd-e0eb-257c-c035-b04f05a66580/21UMGIM36691.rgb.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "6d4d3a",
+                    "textColor1": "fcfbf9",
+                    "textColor2": "ead3b5",
+                    "textColor3": "e0d8d3",
+                    "textColor4": "d1b89c"
+                  },
+                  "artistName": "Billie Eilish",
+                  "url": "https://music.apple.com/us/album/male-fantasy/1564530719?i=1564531204",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Alternative",
+                    "Music"
+                  ],
+                  "durationInMillis": 194887,
+                  "releaseDate": "2021-07-30",
+                  "isAppleDigitalMaster": true,
+                  "name": "Male Fantasy",
+                  "isrc": "USUM72105937",
+                  "hasLyrics": true,
+                  "albumName": "Happier Than Ever",
+                  "playParams": {
+                    "id": "1564531204",
+                    "kind": "song"
+                  },
+                  "trackNumber": 16,
+                  "composerName": "Billie Eilish & FINNEAS"
+                }
+              }
+            ]
+          },
+          "artists": {
+            "href": "/v1/catalog/us/albums/1564530719/artists",
+            "data": [
+              {
+                "id": "1065981054",
+                "type": "artists",
+                "href": "/v1/catalog/us/artists/1065981054"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "1568819304",
+        "type": "albums",
+        "href": "/v1/catalog/us/albums/1568819304",
+        "attributes": {
+          "artwork": {
+            "width": 3000,
+            "height": 3000,
+            "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+            "bgColor": "f4eddd",
+            "textColor1": "0a0602",
+            "textColor2": "1e373f",
+            "textColor3": "39342e",
+            "textColor4": "495c5e"
+          },
+          "artistName": "John Mayer",
+          "isSingle": false,
+          "url": "https://music.apple.com/us/album/sob-rock/1568819304",
+          "isComplete": true,
+          "genreNames": [
+            "Pop",
+            "Music"
+          ],
+          "trackCount": 10,
+          "isMasteredForItunes": false,
+          "releaseDate": "2021-07-16",
+          "name": "Sob Rock",
+          "recordLabel": "Columbia",
+          "upc": "886449323081",
+          "copyright": "℗ 2021 Columbia Records, a Division of Sony Music Entertainment",
+          "playParams": {
+            "id": "1568819304",
+            "kind": "album"
+          },
+          "editorialNotes": {
+            "standard": "Once John Mayer mapped out the concept and the songs for <i>Sob Rock</i>, his first studio album since 2017’s <i>The Search for Everything</i>, he promised himself he was going to stick by it. “This is the record where I had 10 songs locked,” John Mayer tells Apple Music. “My record before suffered because the door was open to it the whole time—new songs would come in, old songs would go out. And so it became ‘This is my script, this is my movie.’ We're not going to write a different scene from a different movie.” For the veteran singer-songwriter, that meant immersing himself in the sound of the ’80s—aiming to synthesize a piece of work that feels true to the era while injecting his own flair.<br />\nMayer cozies up to mellow, easygoing blue-eyed soul that oozes with nostalgia at every turn—from his serious, Don Henley-like posture on the album cover to bringing in session musician par excellence Greg Phillinganes (known for his work with Michael Jackson, Stevie Wonder, and Toto) to play keys. As always, his songs serve up a meticulously tidy mix of smooth pop with bluesy accents—though this time around, he does so in a more subdued manner.<br />\nRomantic ballads like “Shouldn’t Matter but It Does” and “Why You No Love Me” ease in with snare drum taps and weeping guitars, as Mayer tries to mend his broken heart. He lets a little looser on “Last Train Home,” stamping in vintage sonic pleasantries like gated drums and slow synth swells as he wonders if his time to settle down in a long-term relationship is running out. It’s a thought that Mayer’s been circling back to more now that he’s in his forties, especially on “Why You No Love Me,” on which he reconsiders how to ask this no-win question. “I have spoken those words for a long time in relationships,” Mayer says. “Maybe it takes 43 years to ask that question, but you still ask it in the language of a child? I've never written more brutal lyrics in my life.”<br />\nEven if Mayer embraces these sounds with his usually slick, demure manner, he was keen on making sure that the album wasn’t too sentimental or overly dramatic. “This is the whole <i>Sob Rock</i> game—get sweet, but never sappy,” he says. “It’s demonstratively sweet and luscious, and melodic and colorful, but it's never to the point where it gets cloying and syrupy. I like to teeter on that line.”",
+            "short": "“This is the whole Sob Rock game—get sweet, but never sappy.”"
+          },
+          "isCompilation": false,
+          "contentRating": "explicit"
+        },
+        "relationships": {
+          "tracks": {
+            "href": "/v1/catalog/us/albums/1568819304/tracks",
+            "data": [
+              {
+                "id": "1568819307",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819307",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/52/0b/91/520b9116-3ca2-e3d6-d927-7766496994c9/mzaf_12645329141995995098.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/last-train-home/1568819304?i=1568819307",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 187310,
+                  "releaseDate": "2021-06-04",
+                  "isAppleDigitalMaster": false,
+                  "name": "Last Train Home",
+                  "isrc": "USSM12101687",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819307",
+                    "kind": "song"
+                  },
+                  "trackNumber": 1,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819308",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819308",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/18/e6/5e/18e65ebe-6eef-eb01-d80c-17c8afae3ace/mzaf_17026989072630048507.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/shouldnt-matter-but-it-does/1568819304?i=1568819308",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 236735,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "Shouldn't Matter but It Does",
+                  "isrc": "USSM12101679",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819308",
+                    "kind": "song"
+                  },
+                  "trackNumber": 2,
+                  "editorialNotes": {
+                    "standard": "The pop-rocker muses on past regrets with heart-aching vocals.",
+                    "short": "The pop-rocker muses on past regrets with heart-aching vocals."
+                  },
+                  "composerName": "John Mayer",
+                  "contentRating": "explicit"
+                }
+              },
+              {
+                "id": "1568819309",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819309",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/7b/f9/f7/7bf9f7af-6caa-c30e-7573-bf02e56ff234/mzaf_12637723486077255015.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/new-light/1568819304?i=1568819309",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 217430,
+                  "releaseDate": "2018-05-10",
+                  "isAppleDigitalMaster": false,
+                  "name": "New Light",
+                  "isrc": "USSM11806100",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819309",
+                    "kind": "song"
+                  },
+                  "trackNumber": 3,
+                  "composerName": "John Mayer & Ernest Wilson"
+                }
+              },
+              {
+                "id": "1568819310",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819310",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/fb/f8/a1/fbf8a1ed-6896-aa28-1358-9768c22f8862/mzaf_11598510675360068820.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/why-you-no-love-me/1568819304?i=1568819310",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 255207,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "Why You No Love Me",
+                  "isrc": "USSM12101680",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819310",
+                    "kind": "song"
+                  },
+                  "trackNumber": 4,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819312",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819312",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/fe/09/12/fe091214-690d-d213-c6ff-c99f4e1be036/mzaf_3700030405918971218.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/wild-blue/1568819304?i=1568819312",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 252414,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "Wild Blue",
+                  "isrc": "USSM12101681",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819312",
+                    "kind": "song"
+                  },
+                  "trackNumber": 5,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819313",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819313",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/03/7c/d0/037cd0f3-98f9-f11f-aad2-af01b4802a4e/mzaf_13881572990810826269.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/shot-in-the-dark/1568819304?i=1568819313",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 249087,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "Shot in the Dark",
+                  "isrc": "USSM12101682",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819313",
+                    "kind": "song"
+                  },
+                  "trackNumber": 6,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819314",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819314",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/21/e9/4a/21e94a2b-873b-f55b-fcfe-a49167ce7af9/mzaf_12721798220460798435.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/i-guess-i-just-feel-like/1568819304?i=1568819314",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 286387,
+                  "releaseDate": "2019-02-22",
+                  "isAppleDigitalMaster": false,
+                  "name": "I Guess I Just Feel Like",
+                  "isrc": "USSM11900959",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819314",
+                    "kind": "song"
+                  },
+                  "trackNumber": 7,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819887",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819887",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/1c/fb/0f/1cfb0f89-db44-27e0-18a9-406893d25511/mzaf_4076652072917533348.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/til-the-right-one-comes/1568819304?i=1568819887",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 219226,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "Til the Right One Comes",
+                  "isrc": "USSM12101683",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819887",
+                    "kind": "song"
+                  },
+                  "trackNumber": 8,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819888",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819888",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview115/v4/1a/84/43/1a844324-fc6e-3dac-a19c-8a3802dee840/mzaf_15012741357605808737.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/carry-me-away/1568819304?i=1568819888",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 159134,
+                  "releaseDate": "2019-09-06",
+                  "isAppleDigitalMaster": false,
+                  "name": "Carry Me Away",
+                  "isrc": "USSM11905957",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819888",
+                    "kind": "song"
+                  },
+                  "trackNumber": 9,
+                  "composerName": "John Mayer"
+                }
+              },
+              {
+                "id": "1568819889",
+                "type": "songs",
+                "href": "/v1/catalog/us/songs/1568819889",
+                "attributes": {
+                  "previews": [
+                    {
+                      "url": "https://audio-ssl.itunes.apple.com/itunes-itms8-assets/AudioPreview125/v4/0c/39/36/0c39366d-9f27-532b-7c6c-13c9da858fe5/mzaf_11873112140720507932.plus.aac.p.m4a"
+                    }
+                  ],
+                  "artwork": {
+                    "width": 3000,
+                    "height": 3000,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b0/81/99/b081991e-22da-957d-226d-688dc35f7843/886449323081.jpg/{w}x{h}bb.jpg",
+                    "bgColor": "f4eddd",
+                    "textColor1": "0a0602",
+                    "textColor2": "1e373f",
+                    "textColor3": "39342e",
+                    "textColor4": "495c5e"
+                  },
+                  "artistName": "John Mayer",
+                  "url": "https://music.apple.com/us/album/all-i-want-is-to-be-with-you/1568819304?i=1568819889",
+                  "discNumber": 1,
+                  "genreNames": [
+                    "Pop",
+                    "Music"
+                  ],
+                  "durationInMillis": 244140,
+                  "releaseDate": "2021-07-16",
+                  "isAppleDigitalMaster": false,
+                  "name": "All I Want Is to Be With You",
+                  "isrc": "USSM12101684",
+                  "hasLyrics": true,
+                  "albumName": "Sob Rock",
+                  "playParams": {
+                    "id": "1568819889",
+                    "kind": "song"
+                  },
+                  "trackNumber": 10,
+                  "composerName": "John Mayer"
+                }
+              }
+            ]
+          },
+          "artists": {
+            "href": "/v1/catalog/us/albums/1568819304/artists",
+            "data": [
+              {
+                "id": "472054",
+                "type": "artists",
+                "href": "/v1/catalog/us/artists/472054"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
