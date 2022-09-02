@@ -12,7 +12,7 @@ public extension AmuseKit {
     // https://developer.apple.com/documentation/applemusicapi/preview
 
     struct Preview: Codable {
-        var artwork: AmuseKit.Artwork?
-        var url: String
+        public let artwork: AmuseKit.Artwork?
+        public let url: String
     }
 }
