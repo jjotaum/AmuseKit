@@ -10,7 +10,7 @@ import Foundation
 // A resource—such as an album, song, or playlist—in the Apple Music catalog or iCloud Music Library.
 // https://developer.apple.com/documentation/applemusicapi/resource
 
-protocol Resource: Codable {
+protocol Resource: Codable, Identifiable {
     associatedtype Attributes
     associatedtype Relationships
     var attributes: Attributes? { get }
