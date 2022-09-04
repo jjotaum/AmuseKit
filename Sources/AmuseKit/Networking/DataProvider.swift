@@ -8,7 +8,6 @@
 import Combine
 import Foundation
 import class KeychainAccess.Keychain
-import AppKit
 
 public extension AmuseKit {
     

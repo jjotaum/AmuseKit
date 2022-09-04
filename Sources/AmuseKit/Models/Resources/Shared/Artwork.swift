@@ -22,3 +22,17 @@ public extension AmuseKit {
         public let url: String
     }
 }
+
+public extension AmuseKit.Artwork {
+    typealias ArtworkSize = (width: Int, height: Int)
+    /// Returns artwork formatted url for specific size when possible.
+    /// if `size` parameter is nil `width` & `height` properties will be used as default values for size.
+    /// if `width` and `height` property are also nil full size image URL will be returned.
+    func formattedURL(size: ArtworkSize? = nil) -> URL? {
+        guard let width = size?.width ?? width, let height = size?.height ?? height else {
+            return URL(string: url)
+        }
+        
+        return URL(string: url.replacingOccurrences(of: "{w}x{h}", with: "\(width)x\(height)"))
+    }
+}
