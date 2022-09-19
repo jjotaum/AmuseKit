@@ -17,35 +17,41 @@ class RouterTests: XCTestCase {
         let router = AmuseKit.Router.catalog(countryCode: countryCode, resourceType: .albums)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "albums")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/albums?")
+        
     }
     
     func test_catalogArtistsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.catalog(countryCode: countryCode, resourceType: .artists)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "artists")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/artists?")
     }
     
     func test_catalogMusicVideosRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.catalog(countryCode: countryCode, resourceType: .musicVideos)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "music-videos")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/music-videos?")
     }
     
     func test_catalogPlaylistsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.catalog(countryCode: countryCode, resourceType: .playlists)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "playlists")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/playlists?")
     }
 
     func test_catalogSongsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.catalog(countryCode: countryCode, resourceType: .songs)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "songs")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/songs?")
     }
     
     // MARK: - Library Routers
@@ -54,35 +60,40 @@ class RouterTests: XCTestCase {
         let router = AmuseKit.Router.library(.albums)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "albums")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/albums?")
     }
     
     func test_libraryArtistsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.library(.artists)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "artists")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/artists?")
     }
     
     func test_libraryMusicVideosRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.library(.musicVideos)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "music-videos")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/music-videos?")
     }
     
     func test_libraryPlaylistsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.library(.playlists)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "playlists")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/playlists?")
     }
 
     func test_librarySongsRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.library(.songs)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "songs")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/songs?")
     }
     
     // MARK: - Recommendations
@@ -91,7 +102,8 @@ class RouterTests: XCTestCase {
         let router = AmuseKit.Router.recommendations
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "recommendations")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/recommendations?")
     }
     
     // MARK: - Search
@@ -100,14 +112,16 @@ class RouterTests: XCTestCase {
         let router = AmuseKit.Router.librarySearch
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "search")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/me/library/search?")
     }
     
     func test_searchRouter_returnsValidURLRequest() throws {
         let router = AmuseKit.Router.search(countryCode: countryCode)
         let url = router.asURL([])
         XCTAssertEqual(url?.lastPathComponent, "search")
-        _ = try XCTUnwrap(router.asURLRequest([]))
+        let request = try XCTUnwrap(router.asURLRequest([]))
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/search?")
     }
     
     static var allTests = [

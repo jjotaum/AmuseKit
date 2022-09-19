@@ -29,7 +29,7 @@ extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     private var path: String {
         switch self {
         case .catalog(let countryCode, let type):
-            return "/v1/catalog/\(countryCode)/search/\(type.lastPathComponent)"
+            return "/v1/catalog/\(countryCode)/\(type.lastPathComponent)"
         case .library(let type):
             return "/v1/me/\(type.lastPathComponent)"
         case .recommendations:
