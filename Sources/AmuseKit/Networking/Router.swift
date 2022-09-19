@@ -28,8 +28,8 @@ extension AmuseKit {
 extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     private var path: String {
         switch self {
-        case .catalog(let countryCode, let resourceType):
-            return "/v1/catalog/\(countryCode)/search/\(resourceType)"
+        case .catalog(let countryCode, let type):
+            return "/v1/catalog/\(countryCode)/\(type.lastPathComponent)"
         case .library(let type):
             return "/v1/me/\(type.lastPathComponent)"
         case .recommendations:
@@ -52,9 +52,20 @@ extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
 
     func asURLRequest(_ queryItems: [URLQueryItem]) throws -> URLRequest {
         guard let url = asURL(queryItems) else {
-            throw AmuseKit.AmuseError.invalidRequest
+            throw URLError(.badURL)
         }
         return URLRequest(url: url)
+    }
+}
+
+fileprivate extension AmuseKit.CatalogResourceType {
+    var lastPathComponent: String {
+        switch self {
+        case .musicVideos:
+            return "music-videos"
+        default:
+            return rawValue
+        }
     }
 }
 

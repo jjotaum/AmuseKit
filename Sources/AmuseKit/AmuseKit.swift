@@ -11,7 +11,6 @@ protocol AmuseOption: RawRepresentable, Hashable, CaseIterable {}
 
 public class AmuseKit {
     enum AmuseError: Error {
-        case invalidRequest
         case missingDevToken
         case missingUserToken
     }
@@ -20,10 +19,10 @@ public class AmuseKit {
 extension AmuseKit.AmuseError: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        case .invalidRequest:
-            return NSLocalizedString("", comment: "")
-        default:
-            return nil
+        case .missingDevToken:
+            return "Developer token is missing"
+        case .missingUserToken:
+            return "UserToken token is missing"
         }
     }
 }

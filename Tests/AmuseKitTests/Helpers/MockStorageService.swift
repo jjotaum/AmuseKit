@@ -8,7 +8,7 @@
 import Foundation
 @testable import AmuseKit
 
-struct MockStorageService: StorageService {
+class MockStorageService: StorageService {
     var developerToken: String?
     var userToken: String?
 }
