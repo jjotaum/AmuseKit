@@ -30,23 +30,23 @@ public extension AmuseKit {
     }
 }
 
-extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryAlbum {
+public extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryAlbum {
     static var albums = Self.init(rawValue: .albums)
 }
 
-extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryArtist {
+public extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryArtist {
     static var artists = Self.init(rawValue: .artists)
 }
 
-extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryMusicVideo {
+public extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryMusicVideo {
     static var musicVideos = Self.init(rawValue: .musicVideos)
 }
 
-extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryPlaylist {
+public extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibraryPlaylist {
     static var playlists = Self.init(rawValue: .playlists)
 }
 
-extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibrarySong {
+public extension AmuseKit.LibraryResourceConvertible where Model == AmuseKit.LibrarySong {
     static var songs = Self.init(rawValue: .songs)
 }
 
@@ -71,23 +71,23 @@ public extension AmuseKit {
     }
 }
 
-extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Album {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Album {
     static var albums = Self.init(rawValue: .albums)
 }
 
-extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Artist {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Artist {
     static var artists = Self.init(rawValue: .artists)
 }
 
-extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.MusicVideo {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.MusicVideo {
     static var musicVideos = Self.init(rawValue: .musicVideos)
 }
 
-extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Playlist {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Playlist {
     static var playlists = Self.init(rawValue: .playlists)
 }
 
-extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Song {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Song {
     static var songs = Self.init(rawValue: .songs)
 }
 

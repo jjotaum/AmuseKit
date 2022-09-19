@@ -47,7 +47,7 @@ public extension AmuseKit {
         
         // MARK: - Catalog Methods
         
-        func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
+        public func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKit.AmuseError.missingDevToken
             }
@@ -66,7 +66,7 @@ public extension AmuseKit {
 
         // MARK: - Library Methods
         
-        func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
+        public func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKit.AmuseError.missingDevToken
             }
