@@ -22,7 +22,7 @@ final class DataProviderTests: XCTestCase {
         let developerToken = "A1U2S3E4R5T6O7K8E9N0"
         let mockStorage = MockStorageService()
         let sut: AmuseKit.DataProvider = .init(storage: mockStorage,
-                                               service: MockAPIService())
+                                               requestCoordinator: MockRequestCoordinator())
         sut.setDeveloperToken(developerToken)
         XCTAssertEqual(mockStorage.developerToken, developerToken)
     }
@@ -31,7 +31,7 @@ final class DataProviderTests: XCTestCase {
         let userToken = "A1U2S3E4R5T6O7K8E9N0"
         let mockStorage = MockStorageService()
         let sut: AmuseKit.DataProvider = .init(storage: mockStorage,
-                                               service: MockAPIService())
+                                               requestCoordinator: MockRequestCoordinator())
         sut.setUserToken(userToken)
         XCTAssertEqual(mockStorage.userToken, userToken)
     }
@@ -57,7 +57,7 @@ final class DataProviderTests: XCTestCase {
     
     func test_catalogRequest_withMissingDeveloperToken_throwsError() throws {
         let sut: AmuseKit.DataProvider = .init(storage: MockStorageService(),
-                                               service: MockAPIService())
+                                               requestCoordinator: MockRequestCoordinator())
         XCTAssertThrowsError(try sut.catalog(.albums, ids: []))
     }
     
@@ -125,7 +125,7 @@ final class DataProviderTests: XCTestCase {
     
     func test_libraryRequest_withMissingDeveloperToken_throwsError() throws {
         let sut: AmuseKit.DataProvider = .init(storage: MockStorageService(),
-                                               service: MockAPIService())
+                                               requestCoordinator: MockRequestCoordinator())
         XCTAssertThrowsError(try sut.library(.albums))
     }
     

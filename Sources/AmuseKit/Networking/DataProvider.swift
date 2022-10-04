@@ -16,19 +16,19 @@ public extension AmuseKit {
         public typealias LibrarySearchTypes = Set<LibraryResourceType>
 
         private var storage: StorageService
-        private let service: APIService
+        private let requestCoordinator: RequestCoordinator
         private var userCountryCode: String = "us"
 
         public init(_ storageConfiguration: StorageConfiguration,
-                    service: APIService = URLSession.shared) {
+                    requestCoordinator: RequestCoordinator = URLSession.shared) {
             self.storage = KeyChainService(storageConfiguration)
-            self.service = service
+            self.requestCoordinator = requestCoordinator
         }
         
         init(storage: StorageService,
-             service: APIService) {
+             requestCoordinator: RequestCoordinator) {
             self.storage = storage
-            self.service = service
+            self.requestCoordinator = requestCoordinator
         }
 
         // MARK: - Public Accessors Methods
@@ -57,7 +57,7 @@ public extension AmuseKit {
             )
             request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
             request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
-            return try service.publisher(with: request)
+            return try requestCoordinator.dataTaskPublisher(for: request, decoder: JSONDecoder())
         }
         
         public func catalogSearch(_ resourceTypes: CatalogSearchTypes = .all, limit: Int = 25, searchTerm: String) throws -> AnyPublisher<AmuseKit.SearchResponse, Error> {
@@ -74,7 +74,7 @@ public extension AmuseKit {
             var request = try Router.library(resourceType.rawValue).asURLRequest([])
             request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
             request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
-            return try service.publisher(with: request)
+            return try requestCoordinator.dataTaskPublisher(for: request, decoder: JSONDecoder())
         }
         
 
@@ -96,7 +96,7 @@ public extension AmuseKit {
             ]
             var request = try router.asURLRequest(queryItems)
             request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
-            return try service.publisher(with: request)
+            return try requestCoordinator.dataTaskPublisher(for: request, decoder: JSONDecoder())
         }
     }
 }

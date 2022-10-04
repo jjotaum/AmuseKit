@@ -9,7 +9,7 @@ import Foundation
 
 protocol AmuseOption: RawRepresentable, Hashable, CaseIterable {}
 
-public class AmuseKit {
+public enum AmuseKit {
     enum AmuseError: Error {
         case missingDevToken
         case missingUserToken
