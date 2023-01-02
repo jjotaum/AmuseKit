@@ -58,7 +58,7 @@ extension AmuseKit.Router: URLConvertible, URLRequestConvertible {
     }
 }
 
-fileprivate extension AmuseKit.CatalogResourceType {
+fileprivate extension CatalogResourceType {
     var lastPathComponent: String {
         switch self {
         case .musicVideos:
@@ -69,7 +69,7 @@ fileprivate extension AmuseKit.CatalogResourceType {
     }
 }
 
-fileprivate extension AmuseKit.LibraryResourceType {
+fileprivate extension LibraryResourceType {
     var lastPathComponent: String {
         switch self {
         case .musicVideos:

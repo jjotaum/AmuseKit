@@ -1,5 +1,5 @@
 //
-//  Station.swift
+//  StationResource.swift
 //  AmuseKit
 //
 //  Created by Jota Uribe on 22/06/20.
@@ -13,7 +13,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/stations
     /// Latest revision Feb 21 2022.
 
-    struct Station: Resource {
+    struct StationResource: Resource {
         public typealias Relationships = EmptyCodable
         public let attributes: Attributes?
         public let href: String?
@@ -23,16 +23,16 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.Station {
+public extension AmuseKit.StationResource {
     
     /// The attributes for a station resource.
     /// https://developer.apple.com/documentation/applemusicapi/stations/attributes
     /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
-        public let artwork: AmuseKit.Artwork
+        public let artwork: ResourceArtwork
         public let durationInMillis: Int?
-        public let editorialNotes: AmuseKit.EditorialNotes?
+        public let editorialNotes: ResourceEditorialNotes?
         public let episodeNumber: Int?
         public let contentRating: String?
         public let isLive: Bool

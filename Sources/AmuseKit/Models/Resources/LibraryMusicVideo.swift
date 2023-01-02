@@ -7,22 +7,19 @@
 
 import Foundation
 
-public extension AmuseKit {
-    
-    /// A resource object that represents a library music video.
-    /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos
-    /// Latest revision Feb 21 2022.
+/// A resource object that represents a library music video.
+/// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos
+/// Latest revision Feb 21 2022.
 
-    struct LibraryMusicVideo: Resource {
-        public let attributes: Attributes?
-        public let href: String?
-        public let id: String
-        public let relationships: Relationships?
-        public let type: String
-    }
+public struct LibraryMusicVideo: Resource {
+    public let attributes: Attributes?
+    public let href: String?
+    public let id: String
+    public let relationships: Relationships?
+    public let type: String
 }
 
-public extension AmuseKit.LibraryMusicVideo {
+public extension LibraryMusicVideo {
     
     /// The attributes for the library music videos resource type.
     /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideos/attributes
@@ -31,12 +28,12 @@ public extension AmuseKit.LibraryMusicVideo {
     struct Attributes: Codable {
         public let albumName: String?
         public let artistName: String
-        public let artwork: AmuseKit.Artwork?
+        public let artwork: ResourceArtwork?
         public let contentRating: String?
         public let durationInMillis: Int
         public let genreNames: [String]
         public let name: String
-        public let playParams: AmuseKit.PlayParameters?
+        public let playParams: ResourcePlayParameters?
         public let releaseDate: String?
         public var trackNumber: Int?
     }

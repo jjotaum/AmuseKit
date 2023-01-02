@@ -49,7 +49,7 @@ public extension AmuseKit {
         
         public func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
-                throw AmuseKit.AmuseError.missingDevToken
+                throw AmuseKitError.missingDevToken
             }
 
             var request = try Router.catalog(countryCode: userCountryCode, resourceType: resourceType.rawValue).asURLRequest(
@@ -68,7 +68,7 @@ public extension AmuseKit {
         
         public func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
-                throw AmuseKit.AmuseError.missingDevToken
+                throw AmuseKitError.missingDevToken
             }
 
             var request = try Router.library(resourceType.rawValue).asURLRequest([])
@@ -86,7 +86,7 @@ public extension AmuseKit {
         
         private func searchRequest<T: Codable>(_ router: Router, rawTypes: [String], limit: Int, searchTerm: String) throws -> AnyPublisher<T, Error> {
             guard let developerToken = storage.developerToken else {
-                throw AmuseKit.AmuseError.missingDevToken
+                throw AmuseKitError.missingDevToken
             }
 
             let queryItems = [

@@ -7,35 +7,32 @@
 
 import Foundation
 
-public extension AmuseKit {
-    
-    /// A resource object that represents a library playlist.
-    /// https://developer.apple.com/documentation/applemusicapi/libraryplaylists
-    /// Latest revision Feb 21 2022.
+/// A resource object that represents a library playlist.
+/// https://developer.apple.com/documentation/applemusicapi/libraryplaylists
+/// Latest revision Feb 21 2022.
 
-    struct LibraryPlaylist: Resource {
-        public let attributes: Attributes?
-        public let href: String?
-        public let id: String
-        public let relationships: Relationships?
-        public let type: String
-    }
+public struct LibraryPlaylist: Resource {
+    public let attributes: Attributes?
+    public let href: String?
+    public let id: String
+    public let relationships: Relationships?
+    public let type: String
 }
 
-public extension AmuseKit.LibraryPlaylist {
+public extension LibraryPlaylist {
     
     /// The attributes for a library playlist resource.
     /// https://developer.apple.com/documentation/applemusicapi/libraryplaylists/attributes
     /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
-        public let artwork: AmuseKit.Artwork?
+        public let artwork: ResourceArtwork?
         public let canEdit: Bool
         public let dateAdded: String?
-        public let description: AmuseKit.EditorialNotes?
+        public let description: ResourceEditorialNotes?
         public let hasCatalog: Bool
         public let name: String
-        public let playParams: AmuseKit.PlayParameters?
+        public let playParams: ResourcePlayParameters?
     }
 
     /// The relationships for a library playlist object.

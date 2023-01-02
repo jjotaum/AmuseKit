@@ -7,22 +7,19 @@
 
 import Foundation
 
-public extension AmuseKit {
-    
-    /// A resource object that represents a music video.
-    /// https://developer.apple.com/documentation/applemusicapi/musicvideos
-    /// Latest revision Feb 21 2022.
+/// A resource object that represents a music video.
+/// https://developer.apple.com/documentation/applemusicapi/musicvideos
+/// Latest revision Feb 21 2022.
 
-    struct CatalogMusicVideo: Resource {
-        public let attributes: Attributes?
-        public let href: String?
-        public let id: String
-        public let relationships: Relationships?
-        public let type: String
-    }
+public struct CatalogMusicVideo: Resource {
+    public let attributes: Attributes?
+    public let href: String?
+    public let id: String
+    public let relationships: Relationships?
+    public let type: String
 }
 
-public extension AmuseKit.CatalogMusicVideo {
+public extension CatalogMusicVideo {
     
     /// The attributes for a music video resource.
     /// https://developer.apple.com/documentation/applemusicapi/musicvideos/attributes
@@ -31,17 +28,17 @@ public extension AmuseKit.CatalogMusicVideo {
     struct Attributes: Codable {
         public let albumName: String?
         public let artistName: String
-        public let artwork: AmuseKit.Artwork
+        public let artwork: ResourceArtwork
         public let contentRating: String?
         public let durationInMillis: Int?
-        public let editorialNotes: AmuseKit.EditorialNotes?
+        public let editorialNotes: ResourceEditorialNotes?
         public let genreNames: [String]
         public let has4K: Bool
         public let hasHDR: Bool
         public let isrc: String?
         public let name: String
-        public let playParams: AmuseKit.PlayParameters?
-        public let previews: [AmuseKit.Preview]
+        public let playParams: ResourcePlayParameters?
+        public let previews: [ResourcePreview]
         public let releaseDate: String?
         public let trackNumber: Int?
         public let url: URL

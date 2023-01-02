@@ -18,8 +18,8 @@ public extension AmuseKit {
         public let next: String?
     }
     
-    typealias CuratorsRelationship = Relationship<Curator>
-    typealias GenresRelationship = Relationship<Genre>
+    typealias CuratorsRelationship = Relationship<CuratorResource>
+    typealias GenresRelationship = Relationship<GenreResource>
 
     typealias CatalogAlbumsRelationship = Relationship<CatalogAlbum>
     typealias CatalogArtistsRelationship = Relationship<CatalogArtist>

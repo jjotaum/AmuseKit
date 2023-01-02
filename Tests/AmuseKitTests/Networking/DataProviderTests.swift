@@ -207,7 +207,7 @@ extension DataProviderTests {
     
     private func test_catalogRequest_withValidResponse_returnsData<Resource: Codable>(
         provider: AmuseKit.DataProvider,
-        resourceType: AmuseKit.CatalogResourceConvertible<Resource>,
+        resourceType: CatalogResourceConvertible<Resource>,
         ids: [String]
     ) throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
@@ -226,7 +226,7 @@ extension DataProviderTests {
     
     private func test_libraryRequest_withValidResponse_returnsData<Resource: Codable>(
         provider: AmuseKit.DataProvider,
-        resourceType: AmuseKit.LibraryResourceConvertible<Resource>
+        resourceType: LibraryResourceConvertible<Resource>
     ) throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")

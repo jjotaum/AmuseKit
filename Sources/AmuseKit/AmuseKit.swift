@@ -7,16 +7,14 @@
 
 import Foundation
 
-protocol AmuseOption: RawRepresentable, Hashable, CaseIterable {}
+public enum AmuseKit {}
 
-public enum AmuseKit {
-    enum AmuseError: Error {
-        case missingDevToken
-        case missingUserToken
-    }
+enum AmuseKitError: Error {
+    case missingDevToken
+    case missingUserToken
 }
 
-extension AmuseKit.AmuseError: LocalizedError {
+extension AmuseKitError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .missingDevToken:
@@ -26,3 +24,4 @@ extension AmuseKit.AmuseError: LocalizedError {
         }
     }
 }
+
