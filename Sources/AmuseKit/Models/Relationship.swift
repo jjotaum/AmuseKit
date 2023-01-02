@@ -17,14 +17,15 @@ public extension AmuseKit {
         public let href: String
         public let next: String?
     }
-
-    typealias AlbumsRelationship = Relationship<Album>
-    typealias ArtistsRelationship = Relationship<Artist>
+    
     typealias CuratorsRelationship = Relationship<Curator>
     typealias GenresRelationship = Relationship<Genre>
-    typealias MusicVideosRelationship = Relationship<MusicVideo>
-    typealias PlaylistRelationship = Relationship<Playlist>
-    typealias SongRelationship = Relationship<Song>
+
+    typealias CatalogAlbumsRelationship = Relationship<CatalogAlbum>
+    typealias CatalogArtistsRelationship = Relationship<CatalogArtist>
+    typealias CatalogMusicVideosRelationship = Relationship<CatalogMusicVideo>
+    typealias CatalogPlaylistsRelationship = Relationship<CatalogPlaylist>
+    typealias CatalogSongsRelationship = Relationship<CatalogSong>
 
     typealias LibraryAlbumsRelationship = Relationship<LibraryAlbum>
     typealias LibraryArtistsRelationship = Relationship<LibraryArtist>

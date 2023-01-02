@@ -13,7 +13,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/songs
     /// Latest revision Feb 21 2022.
 
-    struct Song: Resource {
+    struct CatalogSong: Resource {
         public let attributes: Attributes?
         public let href: String?
         public let id: String
@@ -22,7 +22,7 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.Song {
+public extension AmuseKit.CatalogSong {
 
     /// The attributes for a song resource.
     /// https://developer.apple.com/documentation/applemusicapi/songs/attributes
@@ -57,8 +57,8 @@ public extension AmuseKit.Song {
     /// https://developer.apple.com/documentation/applemusicapi/songs/relationships
 
     struct Relationships: Codable {
-        public let albums: AmuseKit.AlbumsRelationship?
-        public let artists: AmuseKit.ArtistsRelationship?
+        public let albums: AmuseKit.CatalogAlbumsRelationship?
+        public let artists: AmuseKit.CatalogArtistsRelationship?
         public let genres: AmuseKit.GenresRelationship?
     }
 }

@@ -71,23 +71,23 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Album {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.CatalogAlbum {
     static var albums = Self.init(rawValue: .albums)
 }
 
-public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Artist {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.CatalogArtist {
     static var artists = Self.init(rawValue: .artists)
 }
 
-public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.MusicVideo {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.CatalogMusicVideo {
     static var musicVideos = Self.init(rawValue: .musicVideos)
 }
 
-public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Playlist {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.CatalogPlaylist {
     static var playlists = Self.init(rawValue: .playlists)
 }
 
-public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.Song {
+public extension AmuseKit.CatalogResourceConvertible where Model == AmuseKit.CatalogSong {
     static var songs = Self.init(rawValue: .songs)
 }
 

@@ -24,7 +24,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/playlists
     /// Latest revision Feb 21 2022.
 
-    struct Playlist: Resource {
+    struct CatalogPlaylist: Resource {
         public let attributes: Attributes?
         public let href: String?
         public let id: String
@@ -33,7 +33,7 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.Playlist {
+public extension AmuseKit.CatalogPlaylist {
     
     /// The attributes for a playlist object.
     /// https://developer.apple.com/documentation/applemusicapi/playlists/attributes
@@ -57,6 +57,6 @@ public extension AmuseKit.Playlist {
 
     struct Relationships: Codable {
         public let curator: AmuseKit.CuratorsRelationship?
-        public let tracks: AmuseKit.SongRelationship?
+        public let tracks: AmuseKit.CatalogSongsRelationship?
     }
 }

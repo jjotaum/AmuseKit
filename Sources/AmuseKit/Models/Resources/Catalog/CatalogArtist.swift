@@ -1,5 +1,5 @@
 //
-//  Artist.swift
+//  CatalogArtist.swift
 //  AmuseKit
 //
 //  Created by Jota Uribe on 15/06/20.
@@ -13,7 +13,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/artists-uip
     /// Latest revision Feb 21 2022.
 
-    struct Artist: Resource {
+    struct CatalogArtist: Resource {
         public let attributes: Attributes?
         public let href: String?
         public let id: String
@@ -22,7 +22,7 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.Artist {
+public extension AmuseKit.CatalogArtist {
 
     /// The attributes for an artist resource.
     /// https://developer.apple.com/documentation/applemusicapi/artists/attributes
@@ -40,9 +40,9 @@ public extension AmuseKit.Artist {
     /// Latest revision Feb 21 2022. 
 
     struct Relationships: Codable {
-        public let albums: AmuseKit.AlbumsRelationship?
+        public let albums: AmuseKit.CatalogAlbumsRelationship?
         public let genres: AmuseKit.GenresRelationship?
-        public let musicVideos: AmuseKit.MusicVideosRelationship?
-        public let playlists: AmuseKit.PlaylistRelationship?
+        public let musicVideos: AmuseKit.CatalogMusicVideosRelationship?
+        public let playlists: AmuseKit.CatalogPlaylistsRelationship?
     }
 }

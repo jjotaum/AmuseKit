@@ -1,5 +1,5 @@
 //
-//  MusicVideo.swift
+//  CatalogMusicVideo.swift
 //  AmuseKit
 //
 //  Created by Jota Uribe on 22/06/20.
@@ -13,7 +13,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/musicvideos
     /// Latest revision Feb 21 2022.
 
-    struct MusicVideo: Resource {
+    struct CatalogMusicVideo: Resource {
         public let attributes: Attributes?
         public let href: String?
         public let id: String
@@ -22,7 +22,7 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.MusicVideo {
+public extension AmuseKit.CatalogMusicVideo {
     
     /// The attributes for a music video resource.
     /// https://developer.apple.com/documentation/applemusicapi/musicvideos/attributes
@@ -55,8 +55,8 @@ public extension AmuseKit.MusicVideo {
     /// https://developer.apple.com/documentation/applemusicapi/musicvideo/relationships
 
     struct Relationships: Codable {
-        public let albums: AmuseKit.AlbumsRelationship?
-        public let artists: AmuseKit.ArtistsRelationship?
+        public let albums: AmuseKit.CatalogAlbumsRelationship?
+        public let artists: AmuseKit.CatalogArtistsRelationship?
         public let genres: AmuseKit.GenresRelationship?
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Album.swift
+//  CatalogAlbum.swift
 //  AmuseKit
 //
 //  Created by Jota Uribe on 15/06/20.
@@ -13,7 +13,7 @@ public extension AmuseKit {
     /// https://developer.apple.com/documentation/applemusicapi/albums
     /// Latest revision Feb 21 2022.
 
-    struct Album: Resource {
+    struct CatalogAlbum: Resource {
         public let attributes: Attributes?
         public let href: String?
         public let id: String
@@ -22,7 +22,7 @@ public extension AmuseKit {
     }
 }
 
-public extension AmuseKit.Album {
+public extension AmuseKit.CatalogAlbum {
     
     /// The attributes for an album resource.
     /// https://developer.apple.com/documentation/applemusicapi/albums/attributes
@@ -52,8 +52,8 @@ public extension AmuseKit.Album {
     /// https://developer.apple.com/documentation/applemusicapi/album/relationships
 
     struct Relationships: Codable {
-        public let artists: AmuseKit.AlbumsRelationship?
+        public let artists: AmuseKit.CatalogAlbumsRelationship?
         public let genres: AmuseKit.GenresRelationship?
-        public let tracks: AmuseKit.SongRelationship?
+        public let tracks: AmuseKit.CatalogSongsRelationship?
     }
 }

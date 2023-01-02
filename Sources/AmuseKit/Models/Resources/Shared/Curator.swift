@@ -39,6 +39,6 @@ public extension AmuseKit.Curator {
     /// https://developer.apple.com/documentation/applemusicapi/curator/relationships
 
     struct Relationships: Codable {
-        public let playlists: AmuseKit.PlaylistRelationship?
+        public let playlists: AmuseKit.CatalogPlaylistsRelationship?
     }
 }
