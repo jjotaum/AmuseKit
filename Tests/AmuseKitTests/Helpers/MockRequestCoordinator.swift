@@ -36,20 +36,14 @@ struct MockRequestCoordinator: RequestCoordinator  {
         }
     }
     
-    func data<T>(request: URLRequest, decoder: RequestDecoder) async throws -> RequestResult<T> where T : Decodable, T : Encodable {
+    func data<T>(request: URLRequest, decoder: RequestDecoder) async throws -> T where T : Decodable, T : Encodable {
         guard let filePath = Bundle.module.path(forResource: resourceName, ofType: "json") else {
             throw MockAPIServiceError.invalidFilePath(endpoint: resourceName)
         }
         guard let data = try? Data(contentsOf: URL(fileURLWithPath: filePath), options: .mappedIfSafe) else {
             throw MockAPIServiceError.invalidFileFormat
         }
-        
-        do {
-            let response = try decoder.decode(T.self, from: data)
-            return .success(response)
-        } catch {
-            return .failure(error)
-        }
+        return try decoder.decode(T.self, from: data)
     }
     
     func dataTaskPublisher<T>(for request: URLRequest, decoder: RequestDecoder) throws -> AnyPublisher<T, Error> where T : Decodable, T : Encodable {

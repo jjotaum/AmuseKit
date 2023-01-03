@@ -20,7 +20,7 @@ public protocol RequestCoordinator {
     func dataTask<T: Codable>(request: URLRequest, decoder: RequestDecoder, completion: @escaping (RequestResult<T>) -> Void)
     @available(iOS 15.0, *)
     @available(macOS 12.0, *)
-    func data<T: Codable>(request: URLRequest, decoder: RequestDecoder) async throws -> RequestResult<T>
+    func data<T: Codable>(request: URLRequest, decoder: RequestDecoder) async throws -> T
     func dataTaskPublisher<T: Codable>(for request: URLRequest, decoder: RequestDecoder) throws -> AnyPublisher<T, Error>
 }
 
@@ -47,11 +47,9 @@ extension URLSession: RequestCoordinator {
     
     @available(iOS 15.0, *)
     @available(macOS 12.0, *)
-    public func data<T>(request: URLRequest, decoder: RequestDecoder) async throws -> RequestResult<T> where T : Decodable, T : Encodable {
+    public func data<T>(request: URLRequest, decoder: RequestDecoder) async throws -> T where T : Decodable, T : Encodable {
         let data: (Data, URLResponse) = try await data(for: request)
-        return Result {
-            try decoder.decode(T.self, from: data.0)
-        }
+        return try decoder.decode(T.self, from: data.0)
     }
     
     public func dataTaskPublisher<T>(for request: URLRequest, decoder: RequestDecoder) throws -> AnyPublisher<T, Error> where T : Decodable, T : Encodable {

@@ -46,6 +46,19 @@ public extension AmuseKit {
         }
         
         // MARK: - Catalog Methods
+        @available(iOS 15.0, *)
+        public func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) async throws -> AmuseKit.ResponseRoot<Resource, EmptyCodable> {
+            guard let developerToken = storage.developerToken else {
+                throw AmuseKitError.missingDevToken
+            }
+
+            var request = try Router.catalog(countryCode: userCountryCode, resourceType: resourceType.rawValue).asURLRequest(
+                [.init(name: "ids", value: ids.joined(separator: ","))]
+            )
+            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
+            request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
+            return try await requestCoordinator.data(request: request, decoder: JSONDecoder())
+        }
         
         public func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
@@ -65,6 +78,17 @@ public extension AmuseKit {
         }
 
         // MARK: - Library Methods
+        @available(iOS 15.0, *)
+        public func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) async throws -> AmuseKit.ResponseRoot<Resource, EmptyCodable> {
+            guard let developerToken = storage.developerToken else {
+                throw AmuseKitError.missingDevToken
+            }
+
+            var request = try Router.library(resourceType.rawValue).asURLRequest([])
+            request.setValue("Bearer \(developerToken)", forHTTPHeaderField: "Authorization")
+            request.setValue(storage.userToken, forHTTPHeaderField: "Music-User-Token")
+            return try await requestCoordinator.data(request: request, decoder: JSONDecoder())
+        }
         
         public func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) throws -> AnyPublisher<AmuseKit.ResponseRoot<Resource, EmptyCodable>, Error> {
             guard let developerToken = storage.developerToken else {
