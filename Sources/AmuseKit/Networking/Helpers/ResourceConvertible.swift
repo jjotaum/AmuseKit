@@ -20,23 +20,23 @@ public struct LibraryResourceConvertible<Model>: ResourceConvertible {
     let rawValue: LibraryResourceType
 }
 
-extension LibraryResourceConvertible where Model == LibraryAlbum {
+public extension LibraryResourceConvertible where Model == LibraryAlbum {
     static var albums = Self.init(rawValue: .albums)
 }
 
-extension LibraryResourceConvertible where Model == LibraryArtist {
+public extension LibraryResourceConvertible where Model == LibraryArtist {
     static var artists = Self.init(rawValue: .artists)
 }
 
-extension LibraryResourceConvertible where Model == LibraryMusicVideo {
+public extension LibraryResourceConvertible where Model == LibraryMusicVideo {
     static var musicVideos = Self.init(rawValue: .musicVideos)
 }
 
-extension LibraryResourceConvertible where Model == LibraryPlaylist {
+public extension LibraryResourceConvertible where Model == LibraryPlaylist {
     static var playlists = Self.init(rawValue: .playlists)
 }
 
-extension LibraryResourceConvertible where Model == LibrarySong {
+public extension LibraryResourceConvertible where Model == LibrarySong {
     static var songs = Self.init(rawValue: .songs)
 }
 
@@ -47,22 +47,22 @@ public struct CatalogResourceConvertible<Model>: ResourceConvertible {
     let rawValue: CatalogResourceType
 }
 
-extension CatalogResourceConvertible where Model == CatalogAlbum {
+public extension CatalogResourceConvertible where Model == CatalogAlbum {
     static var albums = Self.init(rawValue: .albums)
 }
 
-extension CatalogResourceConvertible where Model == CatalogArtist {
+public extension CatalogResourceConvertible where Model == CatalogArtist {
     static var artists = Self.init(rawValue: .artists)
 }
 
-extension CatalogResourceConvertible where Model == CatalogMusicVideo {
+public extension CatalogResourceConvertible where Model == CatalogMusicVideo {
     static var musicVideos = Self.init(rawValue: .musicVideos)
 }
 
-extension CatalogResourceConvertible where Model == CatalogPlaylist {
+public extension CatalogResourceConvertible where Model == CatalogPlaylist {
     static var playlists = Self.init(rawValue: .playlists)
 }
 
-extension CatalogResourceConvertible where Model == CatalogSong {
+public extension CatalogResourceConvertible where Model == CatalogSong {
     static var songs = Self.init(rawValue: .songs)
 }

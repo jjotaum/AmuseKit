@@ -7,23 +7,20 @@
 
 import Foundation
 
-public extension AmuseKit {
-    
-    /// A resource object that represents a station.
-    /// https://developer.apple.com/documentation/applemusicapi/stations
-    /// Latest revision Feb 21 2022.
+/// A resource object that represents a station.
+/// https://developer.apple.com/documentation/applemusicapi/stations
+/// Latest revision Feb 21 2022.
 
-    struct StationResource: Resource {
-        public typealias Relationships = EmptyCodable
-        public let attributes: Attributes?
-        public let href: String?
-        public let id: String
-        public let relationships: EmptyCodable?
-        public let type: String
-    }
+public struct StationResource: Resource {
+    public typealias Relationships = AmuseKit.EmptyCodable
+    public let attributes: Attributes?
+    public let href: String?
+    public let id: String
+    public let relationships: AmuseKit.EmptyCodable?
+    public let type: String
 }
 
-public extension AmuseKit.StationResource {
+public extension StationResource {
     
     /// The attributes for a station resource.
     /// https://developer.apple.com/documentation/applemusicapi/stations/attributes
