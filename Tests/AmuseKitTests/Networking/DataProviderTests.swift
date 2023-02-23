@@ -151,6 +151,18 @@ final class DataProviderTests: XCTestCase {
                                                                           ids: ids)
     }
     
+    @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
+    func test_async_catalogSearchRequest_withValidResponse_returnsResults() async throws {
+        let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_search")
+        let response = try await sut.catalogSearch(searchTerm: "")
+        XCTAssertNotNil(response.results?.playlists)
+        XCTAssertNotNil(response.results?.albums)
+        XCTAssertNotNil(response.results?.artists)
+        XCTAssertNotNil(response.results?.songs)
+        XCTAssertNotNil(response.results?.musicVideos)
+    }
+    
     func test_catalogSearchRequest_withValidResponse_returnsResults() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
@@ -249,6 +261,17 @@ final class DataProviderTests: XCTestCase {
                                                                           resourceType: .songs)
     }
     
+    @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
+    func test_async_librarySearchRequest_withValidResponse_returnsResults() async throws {
+        let sut: AmuseKit.DataProvider = .mock(resourceName: "library_search")
+        let response = try await sut.librarySearch(searchTerm: "")
+        XCTAssertNotNil(response.results?.playlists)
+        XCTAssertNotNil(response.results?.albums)
+        XCTAssertNotNil(response.results?.artists)
+        XCTAssertNotNil(response.results?.songs)
+    }
+    
     func test_LibrarySearchRequest_withValidResponse_returnsResults() throws {
         let completionExpectation = XCTestExpectation(description: "completion should be called")
         let valueExpectation = XCTestExpectation(description: "value callback should be called")
@@ -279,6 +302,7 @@ final class DataProviderTests: XCTestCase {
         ("test_catalogMusicVideosRequest_withValidResponse_returnsData", test_catalogMusicVideosRequest_withValidResponse_returnsData),
         ("test_catalogPlaylistsRequest_withValidResponse_returnsData", test_catalogPlaylistsRequest_withValidResponse_returnsData),
         ("test_catalogSongsRequest_withValidResponse_returnsData", test_catalogSongsRequest_withValidResponse_returnsData),
+        ("test_async_catalogSearchRequest_withValidResponse_returnsResults", test_async_catalogSearchRequest_withValidResponse_returnsResults),
         ("test_catalogSearchRequest_withValidResponse_returnsResults", test_catalogSearchRequest_withValidResponse_returnsResults),
         // Library
         ("test_libraryRequest_withMissingDeveloperToken_throwsError", test_libraryRequest_withMissingDeveloperToken_throwsError),
@@ -287,6 +311,7 @@ final class DataProviderTests: XCTestCase {
         ("test_libraryMusicVideosRequest_withValidResponse_returnsData", test_libraryMusicVideosRequest_withValidResponse_returnsData),
         ("test_libraryPlaylistsRequest_withValidResponse_returnsData", test_libraryPlaylistsRequest_withValidResponse_returnsData),
         ("test_librarySongsRequest_withValidResponse_returnsData", test_librarySongsRequest_withValidResponse_returnsData),
+        ("test_async_librarySearchRequest_withValidResponse_returnsResults", test_async_librarySearchRequest_withValidResponse_returnsResults),
         ("test_LibrarySearchRequest_withValidResponse_returnsResults", test_LibrarySearchRequest_withValidResponse_returnsResults)
     ]
 }
