@@ -25,13 +25,13 @@ public extension AmuseKit {
             case musicVideos = "music-videos"
         }
 
-        public let albums: AmuseKit.ResponseRoot<Album, EmptyCodable>?
-        public let appleCurators: AmuseKit.ResponseRoot<Curator, EmptyCodable>?
-        public let artists: AmuseKit.ResponseRoot<Artist, EmptyCodable>?
-        public let curators: AmuseKit.ResponseRoot<Curator, EmptyCodable>?
-        public let musicVideos: AmuseKit.ResponseRoot<MusicVideo, EmptyCodable>?
-        public let playlists: AmuseKit.ResponseRoot<Playlist, EmptyCodable>?
-        public let songs: AmuseKit.ResponseRoot<Song, EmptyCodable>?
-        public let stations: AmuseKit.ResponseRoot<Station, EmptyCodable>?
+        public let albums: AmuseKit.ResponseRoot<CatalogAlbum, EmptyCodable>?
+        public let appleCurators: AmuseKit.ResponseRoot<CuratorResource, EmptyCodable>?
+        public let artists: AmuseKit.ResponseRoot<CatalogArtist, EmptyCodable>?
+        public let curators: AmuseKit.ResponseRoot<CuratorResource, EmptyCodable>?
+        public let musicVideos: AmuseKit.ResponseRoot<CatalogMusicVideo, EmptyCodable>?
+        public let playlists: AmuseKit.ResponseRoot<CatalogPlaylist, EmptyCodable>?
+        public let songs: AmuseKit.ResponseRoot<CatalogSong, EmptyCodable>?
+        public let stations: AmuseKit.ResponseRoot<StationResource, EmptyCodable>?
     }
 }

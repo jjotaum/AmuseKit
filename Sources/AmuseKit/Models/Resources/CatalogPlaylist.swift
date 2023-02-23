@@ -1,5 +1,5 @@
 //
-//  Playlist.swift
+//  CatalogPlaylist.swift
 //  AmuseKit
 //
 //  Created by Jota Uribe on 15/06/20.
@@ -18,36 +18,33 @@ public enum PlaylistType: String, Codable {
     case userShared = "user-shared"
 }
 
-public extension AmuseKit {
-    
-    /// A Resource object that represents a playlist.
-    /// https://developer.apple.com/documentation/applemusicapi/playlists
-    /// Latest revision Feb 21 2022.
+/// A Resource object that represents a playlist.
+/// https://developer.apple.com/documentation/applemusicapi/playlists
+/// Latest revision Feb 21 2022.
 
-    struct Playlist: Resource {
-        public let attributes: Attributes?
-        public let href: String?
-        public let id: String
-        public let relationships: Relationships?
-        public let type: String
-    }
+public struct CatalogPlaylist: Resource {
+    public let attributes: Attributes?
+    public let href: String?
+    public let id: String
+    public let relationships: Relationships?
+    public let type: String
 }
 
-public extension AmuseKit.Playlist {
+public extension CatalogPlaylist {
     
     /// The attributes for a playlist object.
     /// https://developer.apple.com/documentation/applemusicapi/playlists/attributes
     /// Latest revision Feb 21 2022.
 
     struct Attributes: Codable {
-        public let artwork: AmuseKit.Artwork?
+        public let artwork: ResourceArtwork?
         public let curatorName: String
-        public let description: AmuseKit.EditorialNotes?
+        public let description: ResourceEditorialNotes?
         public let isChart: Bool
         public let lastModifiedDate: String
         public let playlistType: String
         public let name: String
-        public let playParams: AmuseKit.PlayParameters
+        public let playParams: ResourcePlayParameters
         public let url: String
         public let trackTypes: [String]?
     }
@@ -57,6 +54,6 @@ public extension AmuseKit.Playlist {
 
     struct Relationships: Codable {
         public let curator: AmuseKit.CuratorsRelationship?
-        public let tracks: AmuseKit.SongRelationship?
+        public let tracks: AmuseKit.CatalogSongsRelationship?
     }
 }

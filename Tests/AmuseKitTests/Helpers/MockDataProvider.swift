@@ -10,11 +10,11 @@
 
 extension AmuseKit.DataProvider {
     static func mock(resourceName: String) -> AmuseKit.DataProvider {
-        var service: MockAPIService = MockAPIService()
-        service.resourceName = resourceName
+        var requestCoordinator: MockRequestCoordinator = MockRequestCoordinator()
+        requestCoordinator.resourceName = resourceName
         var mock: AmuseKit.DataProvider
         mock = .init(storage: MockStorageService(),
-                     service: service)
+                     requestCoordinator: requestCoordinator)
         mock.setDeveloperToken("A1D2E3V4T5O6K7E8N9")
         return mock
     }

@@ -1,6 +1,6 @@
 //
 //  LibrarySearchResponse.swift
-//  
+//  AmuseKit
 //
 //  Created by Jota Uribe on 21/02/22.
 //
