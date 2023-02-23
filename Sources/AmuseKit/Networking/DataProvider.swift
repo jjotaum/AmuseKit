@@ -47,6 +47,7 @@ public extension AmuseKit {
         
         // MARK: - Catalog Methods
         @available(iOS 15.0, *)
+        @available(macOS 12.0, *)
         public func catalog<Resource: Codable>(_ resourceType: CatalogResourceConvertible<Resource>, ids: [String]) async throws -> AmuseKit.ResponseRoot<Resource, EmptyCodable> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKitError.missingDevToken
@@ -79,6 +80,7 @@ public extension AmuseKit {
 
         // MARK: - Library Methods
         @available(iOS 15.0, *)
+        @available(macOS 12.0, *)
         public func library<Resource: Codable>(_ resourceType: LibraryResourceConvertible<Resource>) async throws -> AmuseKit.ResponseRoot<Resource, EmptyCodable> {
             guard let developerToken = storage.developerToken else {
                 throw AmuseKitError.missingDevToken

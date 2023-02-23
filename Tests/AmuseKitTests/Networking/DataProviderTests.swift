@@ -70,6 +70,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_catalogAlbumsRequest_withValidResponse_returnsData() async throws {
         let ids = ["123", "456", "789"]
         let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_albums")
@@ -87,6 +88,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_catalogArtistsRequest_withValidResponse_returnsData() async throws {
         let ids = ["123", "456", "789"]
         let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_artists")
@@ -104,6 +106,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_catalogMusicVideosRequest_withValidResponse_returnsData() async throws {
         let ids = ["123", "456", "789"]
         let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_music-videos")
@@ -121,6 +124,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_catalogPlaylistsRequest_withValidResponse_returnsData() async throws {
         let ids = ["123", "456", "789"]
         let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_playlists")
@@ -138,6 +142,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_catalogSongsRequest_withValidResponse_returnsData() async throws {
         let ids = ["123", "456", "789"]
         let sut: AmuseKit.DataProvider = .mock(resourceName: "catalog_songs")
@@ -181,6 +186,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_libraryAlbumsRequest_withValidResponse_returnsData() async throws {
         let sut: AmuseKit.DataProvider = .mock(resourceName: "library_albums")
         try await test_async_libraryRequest_withValidResponse_returnsData(provider: sut,
@@ -194,6 +200,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_libraryArtistsRequest_withValidResponse_returnsData() async throws {
         let sut: AmuseKit.DataProvider = .mock(resourceName: "library_artists")
         try await test_async_libraryRequest_withValidResponse_returnsData(provider: sut,
@@ -207,6 +214,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_libraryMusicVideosRequest_withValidResponse_returnsData() async throws {
         let sut: AmuseKit.DataProvider = .mock(resourceName: "library_music-videos")
         try await test_async_libraryRequest_withValidResponse_returnsData(provider: sut,
@@ -220,6 +228,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_libraryPlaylistsRequest_withValidResponse_returnsData() async throws {
         let sut: AmuseKit.DataProvider = .mock(resourceName: "library_playlists")
         try await test_async_libraryRequest_withValidResponse_returnsData(provider: sut,
@@ -233,6 +242,7 @@ final class DataProviderTests: XCTestCase {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     func test_async_librarySongsRequest_withValidResponse_returnsData() async throws {
         let sut: AmuseKit.DataProvider = .mock(resourceName: "library_songs")
         try await test_async_libraryRequest_withValidResponse_returnsData(provider: sut,
@@ -299,6 +309,7 @@ extension CatalogResourceType {
 extension DataProviderTests {
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     private func test_async_catalogRequest_withValidResponse_returnsData<Resource: Codable>(
         provider: AmuseKit.DataProvider,
         resourceType: CatalogResourceConvertible<Resource>,
@@ -328,6 +339,7 @@ extension DataProviderTests {
     }
     
     @available(iOS 15.0, *)
+    @available(macOS 12.0, *)
     private func test_async_libraryRequest_withValidResponse_returnsData<Resource: Codable>(
         provider: AmuseKit.DataProvider,
         resourceType: LibraryResourceConvertible<Resource>
