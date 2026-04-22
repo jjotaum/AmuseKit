@@ -1,4 +1,10 @@
 # AmuseKit
+
+> [!WARNING]
+> This repository is archived and is no longer maintained or supported.
+> Apple introduced native [MusicKit](https://developer.apple.com/musickit/) support a couple of years ago, and it is now mature enough that this package is no longer needed for most projects.
+> For new Apple platform projects, prefer Apple's native MusicKit APIs or an open source alternative built on top of them such as [MusadoraKit](https://github.com/rryam/MusadoraKit).
+
 A swift package to facilitate Apple Music Api integration for iOS, MacOS, tvOS & watchOS projects.
 
 ## USAGE
